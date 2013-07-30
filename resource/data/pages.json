@@ -1,0 +1,31 @@
+{
+	"title": "Pages and Navigation",
+	"sections": [
+		{
+			"title": "Exercises",
+			"steps": [
+				{
+					"title": "Single-page",
+					"url": "resource/data/template/exercise/pages/single-page.html"
+				},
+				{
+					"title": "Multi-page",
+					"url": "resource/data/template/exercise/pages/multi-page.html"
+				}
+			]
+		},
+		{
+			"title": "Solutions",
+			"steps": [
+				{
+					"title": "Single-page",
+					"url": "resource/data/template/solution/pages/single-page.html"
+				},
+				{
+					"title": "Multi-page",
+					"url": "resource/data/template/solution/pages/multi-page.html"
+				}
+			]
+		}
+	]
+}

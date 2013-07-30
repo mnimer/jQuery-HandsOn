@@ -1,0 +1,79 @@
+{
+	"title": "Form Elements",
+	"sections": [
+		{
+			"title": "Exercises",
+			"steps": [
+				{
+					"title": "Text Input",
+					"url": "resource/data/template/exercise/form-elements/text-input.html"
+				},
+				{
+					"title": "Text Area",
+					"url": "resource/data/template/exercise/form-elements/text-area.html"
+				},
+				{
+					"title": "Search Input",
+					"url": "resource/data/template/exercise/form-elements/search-input.html"
+				},
+				{
+					"title": "Slider",
+					"url": "resource/data/template/exercise/form-elements/slider.html"
+				},
+				{
+					"title": "Flip Toggle Switch",
+					"url": "resource/data/template/exercise/form-elements/flip-toggle-switch.html"
+				},
+				{
+					"title": "Radio Buttons",
+					"url": "resource/data/template/exercise/form-elements/radio-buttons.html"
+				},
+				{
+					"title": "Checkboxes",
+					"url": "resource/data/template/exercise/form-elements/checkboxes.html"
+				},
+				{
+					"title": "Select Menu",
+					"url": "resource/data/template/exercise/form-elements/select-menu.html"
+				}
+			]
+		},
+		{
+			"title": "Solutions",
+			"steps": [
+				{
+					"title": "Text Input",
+					"url": "resource/data/template/solution/form-elements/text-input.html"
+				},
+				{
+					"title": "Text Area",
+					"url": "resource/data/template/solution/form-elements/text-area.html"
+				},
+				{
+					"title": "Search Input",
+					"url": "resource/data/template/solution/form-elements/search-input.html"
+				},
+				{
+					"title": "Slider",
+					"url": "resource/data/template/solution/form-elements/slider.html"
+				},
+				{
+					"title": "Flip Toggle Switch",
+					"url": "resource/data/template/solution/form-elements/flip-toggle-switch.html"
+				},
+				{
+					"title": "Radio Buttons",
+					"url": "resource/data/template/solution/form-elements/radio-buttons.html"
+				},
+				{
+					"title": "Checkboxes",
+					"url": "resource/data/template/solution/form-elements/checkboxes.html"
+				},
+				{
+					"title": "Select Menu",
+					"url": "resource/data/template/solution/form-elements/select-menu.html"
+				}
+			]
+		}
+	]
+}

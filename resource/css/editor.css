@@ -1,0 +1,61 @@
+section.editor textarea {
+	width: 820px;
+	height: 450px;
+}
+
+.CodeMirror pre {
+	font-size: 12px;
+	line-height: 1.2em;
+	box-shadow: none;
+	color: #333;
+}
+
+.CodeMirror {
+	display: inline-block;
+	border: 1px solid black;
+	font-size: 1em;
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	background-color: #fff;
+}
+
+.CodeMirror-gutter {
+	min-width: 0;
+}
+
+img.editor-loading-indicator {
+	display: none;
+}
+
+img.editor-loading-indicator.loading {
+	display: block;
+	position: absolute;
+	top: 300px;
+	left: 394px;
+}
+
+button.editor-preview-button {
+	font-family: "Avenir LT W01 35 Light", "Avenir-Light", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+select.editor-combo-box {
+	-webkit-appearance: menulist-button;
+	font-family: "Avenir LT W01 35 Light", "Avenir-Light", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+div.preview {
+	background-image: url(../image/Phone.png);
+	width: 373px;
+	height: 730px;
+}
+
+div.preview iframe {
+	position: relative;
+	top: 124px;
+	left: 31px;
+	width: 320px;
+	height: 480px;
+}

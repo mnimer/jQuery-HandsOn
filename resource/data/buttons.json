@@ -1,0 +1,47 @@
+{
+	"title": "Buttons",
+	"sections": [
+		{
+			"title": "Exercises",
+			"steps": [
+				{
+					"title": "Simple Buttons",
+					"url": "resource/data/template/exercise/buttons/simple-buttons.html"
+				},
+				{
+					"title": "Button Icons",
+					"url": "resource/data/template/exercise/buttons/button-icons.html"
+				},
+				{
+					"title": "Inline Buttons",
+					"url": "resource/data/template/exercise/buttons/inline-buttons.html"
+				},
+				{
+					"title": "Grouped Buttons",
+					"url": "resource/data/template/exercise/buttons/grouped-buttons.html"
+				}
+			]
+		},
+		{
+			"title": "Solutions",
+			"steps": [
+				{
+					"title": "Simple Buttons",
+					"url": "resource/data/template/solution/buttons/simple-buttons.html"
+				},
+				{
+					"title": "Button Icons",
+					"url": "resource/data/template/solution/buttons/button-icons.html"
+				},
+				{
+					"title": "Inline Buttons",
+					"url": "resource/data/template/solution/buttons/inline-buttons.html"
+				},
+				{
+					"title": "Grouped Buttons",
+					"url": "resource/data/template/solution/buttons/grouped-buttons.html"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"title": "Dialogs and Popups",
+	"sections": [
+		{
+			"title": "Exercises",
+			"steps": [
+				{
+					"title": "Dialog",
+					"url": "resource/data/template/exercise/dialogs/dialog.html"
+				},
+				{
+					"title": "Basic Popup",
+					"url": "resource/data/template/exercise/popups/basic-popup.html"
+				},
+				{
+					"title": "Menu Popup",
+					"url": "resource/data/template/exercise/popups/menu-popup.html"
+				},
+				{
+					"title": "Photo Popup",
+					"url": "resource/data/template/exercise/popups/photo-popup.html"
+				},
+				{
+					"title": "Map Popup",
+					"url": "resource/data/template/exercise/popups/map-popup.html"
+				}
+			]
+		},
+		{
+			"title": "Solutions",
+			"steps": [
+				{
+					"title": "Dialog",
+					"url": "resource/data/template/solution/dialogs/dialog.html"
+				},
+				{
+					"title": "Basic Popup",
+					"url": "resource/data/template/solution/popups/basic-popup.html"
+				},
+				{
+					"title": "Menu Popup",
+					"url": "resource/data/template/solution/popups/menu-popup.html"
+				},
+				{
+					"title": "Photo Popup",
+					"url": "resource/data/template/solution/popups/photo-popup.html"
+				},
+				{
+					"title": "Map Popup",
+					"url": "resource/data/template/solution/popups/map-popup.html"
+				}
+			]
+		}
+	]
+}

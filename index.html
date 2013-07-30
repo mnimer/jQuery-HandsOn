@@ -1,0 +1,323 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>NCDevCon 2012 - An Introduction to jQuery Mobile</title>
+
+		<meta name="description" content="NCDevCon 2012 - An Introduction to jQuery Mobile">
+		<meta name="author" content="John Yanarella">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<!-- Avenir fonts via fonts.com -->
+		<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/1af287b9-8247-4e14-8d41-71a662c811fc.css"/>
+		
+		<link rel="stylesheet" href="lib/reveal.js/css/main.css">
+		<link rel="stylesheet" href="resource/css/theme/um.css" id="theme">
+		<link rel="stylesheet" href="lib/reveal.js/lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/codemirror/lib/codemirror.css">
+		<link rel="stylesheet" href="resource/css/editor.css">
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					<p><br>An introduction to</p>
+					<img width="750" height="320" src="resource/image/jQueryMobileLogo.png" alt="jQuery Mobile">
+					<p>Presented by:<br><a href="http://twitter.com/johnyanarella" target="_blank">@JohnYanarella</a></p>
+					<img width="120" height="112" src="resource/image/NCDevConLogo.png" alt="NCDevCon 2012" style="position: absolute; left: 30px; bottom: 74px;">
+				</section>
+				
+				<section>
+					<div style="display: inline-table; width: 820px; height: 600px">
+						<div style="display: table-cell; width: 410px; height: 600px; vertical-align: middle;">
+							<h3>So many devices... so little time.</h3>
+							<p><br></p>
+							<h4 style="color: #149B0E;">Is the web the answer?</h4>
+						</div>
+						<img class="photo" style="display: table-cell; width: 410px; height: 600px; " width="410" height="600" src="resource/image/SoManyDevices.png">
+					</div>
+				</section>
+				
+				<section>
+					<h3>The mobile web is complicated...</h3>
+					<img width="816" height="428" src="resource/image/MobileBuzzwords.png" alt="Graceful Degradation, Responsive Deisgn, Progressive Enhancement, Media Queries, Touch, Gestures, Opera, Android, Blackberry, Windows Phone, iOS, iPad, iPhone, Desktop, Internet Explorer, Chrome, Safari, WebKit, Accessability, Universal Access">
+				</section>
+				
+				<section>
+					<img width="816" height="355" src="resource/image/jQueryMobile.png" alt="jQuery Mobile">
+					<h3>... makes it easy.</h3>
+				</section>
+				
+				<section>
+					<h2>Examples</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<img width="408" height="418" src="resource/image/Examples.png" alt="Example Screenshots">
+						<div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li>Stanford University<br><a href="http://m.stanford.edu/" target="_blank" style="font-size: 22px;">http://m.stanford.edu/</a></a></li>
+								<li>Disney World<br><a href="http://m.disneyworld.disney.go.com/" target="_blank" style="font-size: 22px;">http://m.disneyworld.disney.go.com/</a></li>
+								<li>OpenTable<br><a href="http://m.opentable.com/" target="_blank" style="font-size: 22px;">http://m.opentable.com/</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Built on</h2>
+					<a href="http://jquery.com/" target="_blank"><img width="816" height="209" src="resource/image/jQuery.png"></a>
+					<a href="http://jqueryui.com/" target="_blank"><img width="816" height="209" src="resource/image/jQueryUI.png"></a>
+				</section>
+				
+				<section>
+					<h2>Open Source</h2>
+					<img width="816" height="355" src="resource/image/Licenses.png">
+					<p><span style="display: inline-block; width: 50%; text-align: center;">GPL v2 License</span><span style="display: inline-block; width: 50%; text-align: center;">MIT License</span></p>
+				</section>
+				
+				<section>
+					<h2>Hosted on</h2>
+					<img width="816" height="355" src="resource/image/GitHub.png">
+					<p><a href="https://github.com/jquery/jquery-mobile" target="_blank">https://github.com/jquery/jquery-mobile</a></p>
+				</section>
+				
+				<section>
+					<h2>Sponsored by</h2>
+					<img width="816" height="428" src="resource/image/Sponsors.png" alt="Sponsor Logos">
+				</section>
+				
+				<section>
+					<h2>Cross Device</h2>
+					<img width="816" height="428" src="resource/image/CrossDevice.png" alt="Phone Tablet Desktop">
+				</section>
+				
+				<section>
+					<h2>Cross Platform</h2>
+					<img width="816" height="428" src="resource/image/CrossPlatform.png" alt="Platform Logos">
+				</section>
+				
+				<section>
+					<h2>Cross Browser</h2>
+					<img width="816" height="428" src="resource/image/CrossBrowser.png" alt="Browser Logos">
+				</section>
+				
+				<section>
+					<img class="photo" width="820" height="600" src="resource/image/HTML5-CSS3.png" alt="HTML5 CSS3">
+				</section>
+				
+				<section>
+					<h3 style="color: #149B0E;">Progressive Enhancement</h3>
+					<img class="photo" width="820" height="428" src="resource/image/ProgressiveEnhancement.png" alt="Progressive Enhancement and Graceful Degradation Diagram">
+					<h3 style="color: #DF3300;">Graceful Degradation</h3>
+				</section>
+				
+				<section>
+					<h2>Platform Support</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<img width="272" height="418" src="resource/image/PlatformSupport.png" alt="A, B, C Grade Browsers">
+						<div style="display: table-cell; width: 544px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li>Full enhanced experience with Ajax-based animated page transitions.</li>
+								<li>Enhanced experience except without Ajax navigation features.</li>
+								<li>Basic, non-enhanced HTML experience that is still functional.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Unified User Interface</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<img width="408" height="418" src="resource/image/UnifiedUserInterface.png" alt="Gestures">
+						<div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li>Enhances standard HTML form elements.</li>
+								<li>Touch-optimized, platform agnostic, themeable controls.</li>
+								<li>Controls degrade to native equivalents.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Themeable Appearance</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<a href="http://jquerymobile.com/themeroller/" target="_blank"><img width="408" height="418" src="resource/image/ThemeRoller.png" alt="Theme Roller Logo"></a>
+						<div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li>Real-time preview.</li>
+								<li>26 unique color swatches.</li>
+								<li>Gradient tools.</li>
+								<li>Adobe Kuler integration.</li>
+								<li>Shareable theme URLs.</li>
+								<li>Download and import.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Touch and Gesture Events</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<img width="408" height="418" src="resource/image/Gestures.png" alt="Screenshots of jQuery Mobile UI">
+						<div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle; text-align: left;">
+							<ul>
+								<li style="padding-bottom: 110px;">Tap.</li>
+								<li style="padding-bottom: 110px;">Tap and Hold.</li>
+								<li>Swipe.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Navigation</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<img width="408" height="418" src="resource/image/Navigation.png" alt="Ajax Logo">
+						<div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li>Ajax-based page loading and navigation system.</li>
+								<li>Pages injected into DOM with animated transitions.</li>
+								<li>Maintains 'Back' button and bookmarking support.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Accessibility</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<img width="408" height="418" src="resource/image/UniversalAccess.png" alt="Universal Access Logo">
+						<div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li>WAI-ARIA compliant.</li>
+								<li>Screen reader support.</li>
+								<li>VoiceOver in iOS.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>When do I use it?</h2>
+					<img width="816" height="355" src="resource/image/Spectrum.png">
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<div style="display: table-cell; width: 272px;">
+							<p>Document</p>
+						</div>
+						<div style="display: table-cell; width: 272px;">
+							<p>Interactive</p>
+						</div>
+						<div style="display: table-cell; width: 272px;">
+							<p>Application</p>
+						</div>
+					</div>
+				</section>
+				
+				<section class="editor" data-source="resource/data/buttons.json"></section>
+				
+				<section class="editor" data-source="resource/data/form-elements.json"></section>
+				
+				<section class="editor" data-source="resource/data/list-views.json"></section>
+				
+				<section class="editor" data-source="resource/data/pages.json"></section>
+				
+				<section class="editor" data-source="resource/data/toolbars.json"></section>
+				
+				<section class="editor" data-source="resource/data/dialogs.json"></section>
+				
+				<section>
+					<h2>Resources</h2>
+					<div style="display: inline-table; width: 816px; height: 418px">
+						<div style="display: table-cell; width: 816px; height: 418px; vertical-align: middle;">
+							<ul>
+								<li><b>Official website</b><br><a href="http://jquerymobile.com/" target="_blank">http://jquerymobile.com/</a></li>
+								<li><b>Documentation and demonstrations</b><br><a href="http://jquerymobile.com/demos/" target="_blank">http://jquerymobile.com/demos/</a></li>
+								<li><b>Twitter</b><br><a href="http://www.twitter.com/@jquerymobile" target="_blank">@jquerymobile</a></li>
+								<li><b>Books, plugins, extensions, etc.</b><br><a href="http://jquerymobile.com/resources/" target="_blank">http://jquerymobile.com/resources/</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			
+			</div>
+			
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+			
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+		
+		<script src="lib/reveal.js/lib/js/head.min.js"></script>
+		<script src="lib/reveal.js/js/reveal.min.js"></script>
+		
+		<script src="lib/codemirror/lib/codemirror.js"></script>
+		<script src="lib/codemirror/mode/xml/xml.js"></script>
+		<script src="lib/codemirror/mode/javascript/javascript.js"></script>
+		<script src="lib/codemirror/mode/css/css.js"></script>
+		<script src="lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+		<script src="lib/codemirror/lib/util/closetag.js"></script>
+		
+		<script>
+			Reveal.keyboardEnabled = true;
+			document.addEventListener( 'keydown', function(event) { if (!Reveal.keyboardEnabled) event.stopImmediatePropagation(); }, false );
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+				history: false,
+				
+				theme: 'um',
+				transition: 'concave',
+				
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/reveal.js/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/jquery/jquery-1.8.2.min.js' },
+					{ src: 'lib/bpopup/jquery.bpopup-0.7.0.min.js' },
+					{ src: 'src/js/editor.js' }
+				]
+			});
+			
+		</script>
+		
+		<script type="text/javascript">
+			// Gaug.es Analytics
+			var _gauges = _gauges || [];
+			(function() {
+				var t   = document.createElement('script');
+				t.type  = 'text/javascript';
+				t.async = true;
+				t.id    = 'gauges-tracker';
+				t.setAttribute('data-site-id', '5065f9ac613f5d639400000e');
+				t.src = '//secure.gaug.es/track.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(t, s);
+			})();
+		</script>
+		
+	</body>
+</html>
