@@ -47,8 +47,6 @@
                         <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                             <ul>
                                 <li>Lightweight Footprint</li>
-                                <li>CSS3 Compliant</li>
-                                <li>Cross-Browser</li>
                                 <li>Powerful DOM Selection Engine</li>
                                 <li>jQuery deals with a lot of cross-browser javascript issues</li>
                             </ul>
@@ -104,9 +102,9 @@
                     <div style="display: inline-table; width: 816px; height: 418px">
                         <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                             <ul>
+                                <li>AngularJS, KendoUI, TBD, TBD</li>
                                 <li>Twitter Bootstrap</li>
-                                <li>AngularJS, TBD, TBD</li>
-                                <li>Thousands of Widgets!</li>
+                                <li>Thousands of Widgets/Plugins!</li>
                             </ul>
                         </div>
                     </div>
@@ -137,26 +135,155 @@
 
 
 
-                <!-- ****************************************************
-                    * Document READY()
-                    **************************************************** -->
-                <section class="editor" data-source="resource/data/document-ready.json"></section>
-
 
                 <!-- ****************************************************
-                    * Expressions
+                    * Selection Expressions
                     **************************************************** -->
                 <section>
-                    <h2>Selection Expressions</h2>
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>TBD Item 1</li>
-                                <li>TBD Item 2</li>
-                            </ul>
+                    <section>
+                        <h2>Selection Expressions</h2>
+                        <a href="http://api.jquery.com/category/selectors/" target="_blank">http://api.jquery.com/category/selectors/</a>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>Select element</li>
+                                    <li>CSS Selections</li>
+                                    <li>Child Selectors</li>
+                                    <li>Attribute Selections</li>
+                                    <li>Selection Helpers</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <section>
+                        <h2>Select Elements</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 816px; height: 418px; vertical-align: middle;">
+                            <table cellspacing="1" >
+                                <tr>
+                                    <td>$(document)</td>
+                                    <td>wrap the browser object</td>
+                                </tr>
+                                <tr>
+                                    <td>$(this)</td>
+                                    <td>The owner of the function</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>CSS Selections</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 816px; height: 418px; vertical-align: middle;">
+                                <table cellspacing="1" >
+                                    <tr>
+                                        <td>$("img")</td>
+                                        <td>Select all images on the page.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(".myClass")</td>
+                                        <td>Select all elements with the CSS class="myClass".</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$("#myObjectById")</td>
+                                        <td>Select element with the id='myObjectById'.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Child Selectors</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 816px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>$("p > a")</td>
+                                        <td>Select all a tags directly inside paragraphs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$("p a")</td>
+                                        <td>Select all a tags, at any level, inside a paragraph.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$("div.myClass")</td>
+                                        <td>Select all elements with the class="myClass" inside of a DIV.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>$("p:parent")</td>
+                                        <td>Select PARENT elements of all paragraphs.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Attribute Selections</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 816px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td nowrap>$("div[data-type])</td>
+                                        <td>Select all DIV elements with a "data-type" attribute</td>
+                                    </tr>
+                                    <tr>
+                                        <td nowrap>$("div[data-type='user'])</td>
+                                        <td>Select all DIV elements with data-type='user'</td>
+                                    </tr>
+                                    <tr>
+                                        <td nowrap>$("div[data-type*='user'])</td>
+                                        <td>Select all DIV elements with data-type that contains 'user'</td>
+                                    </tr>
+                                    <tr>
+                                        <td nowrap>$("div[data-type$='user'])</td>
+                                        <td>Select all DIV elements with data-type that ends with 'user'</td>
+                                    </tr>
+                                    <tr>
+                                        <td nowrap>$("div[data-type|='user'])</td>
+                                        <td>Select all DIV elements with data-type that starts with 'user'</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Selection Helpers</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 900px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>$("input[type="checkbox"]:checked)</td>
+                                        <td>Select all CHECKED inputs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(":disabled")</td>
+                                        <td>Select all elements that are disabled.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(":even")  or: $("td:even")</td>
+                                        <td>Select every other element starting with even.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(":hidden") or $("div:hidden")</td>
+                                        <td>Select every hidden elements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(":first") or $("div:first")</td>
+                                        <td>Select first found element.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
                 </section>
+                <section class="editor" data-source="resource/data/beforeJQuery.json"></section>
                 <section class="editor" data-source="resource/data/expressions.json"></section>
 
 
@@ -165,15 +292,60 @@
                     * Modifying HTML
                     **************************************************** -->
                 <section>
-                    <h2>Manipulating HTML</h2>
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>TBD Item 1</li>
-                                <li>Hide, Show, Create new HTML, </li>
-                            </ul>
+                    <section>
+                        <h2>Manipulating HTML</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>Hide or Show elements</li>
+                                    <li>Create and Append new HTML</li>
+                                    <li>Moving HTML</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <section>
+                        <h2>Hide and Show HTML</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Create and Append new HTML</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Moving HTML</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
                 </section>
                 <section class="editor" data-source="resource/data/dom-manipulation.json"></section>
 
@@ -605,7 +777,6 @@
 				progress: true,
 				history: true,
 				mouseWheel: false,
-				history: false,
                 backgroundTransition:'slide',
 				theme: 'um',
 				transition: 'concave',

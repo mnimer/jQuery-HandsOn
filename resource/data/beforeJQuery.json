@@ -1,0 +1,18 @@
+{
+    "title": "Before JQuery",
+    "sections": [
+        {
+            "title": "Examples",
+            "steps": [
+                {
+                    "title": "Selections",
+                    "url": "resource/data/template/examples/beforejquery/selectById.html"
+                },
+                {
+                    "title": "Radio Buttons",
+                    "url": "resource/data/template/examples/beforejquery/radiobuttons.html"
+                }
+            ]
+        }
+    ]
+}

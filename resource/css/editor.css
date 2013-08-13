@@ -59,3 +59,15 @@ div.preview iframe {
 	width: 320px;
 	height: 480px;
 }
+
+
+table{
+    width:100%;
+    background-color: #000000;
+}
+
+td
+{
+    padding:10px;
+    background-color: #ffffff;
+}

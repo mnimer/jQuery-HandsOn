@@ -2,6 +2,15 @@
     "title": "Selection Expressions",
     "sections": [
         {
+            "title": "Examples",
+            "steps": [
+                {
+                    "title": "document.ready",
+                    "url": "resource/data/template/examples/selections/document-ready.html"
+                }
+            ]
+        },
+        {
             "title": "Exercises",
             "steps": [
             ]
