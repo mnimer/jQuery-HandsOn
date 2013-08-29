@@ -12,8 +12,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		
-		<!-- Avenir fonts via fonts.com -->
-		<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/1af287b9-8247-4e14-8d41-71a662c811fc.css"/>
+		<!-- Avenir fonts via fonts.com
+		<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/1af287b9-8247-4e14-8d41-71a662c811fc.css"/-->
 		
 		<link rel="stylesheet" href="lib/reveal.js/css/main.css">
 		<link rel="stylesheet" href="resource/css/theme/um.css" id="theme">
@@ -48,7 +48,7 @@
                             <ul>
                                 <li>Lightweight Footprint</li>
                                 <li>Powerful DOM Selection Engine</li>
-                                <li>jQuery deals with a lot of cross-browser javascript issues</li>
+                                <li>Browser javascript issues</li>
                             </ul>
                         </div>
                     </div>
@@ -283,7 +283,6 @@
                         </div>
                     </section>
                 </section>
-                <section class="editor" data-source="resource/data/beforeJQuery.json"></section>
                 <section class="editor" data-source="resource/data/expressions.json"></section>
 
 
@@ -775,7 +774,7 @@
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: true,
+				history: false,
 				mouseWheel: false,
                 backgroundTransition:'slide',
 				theme: 'um',
@@ -793,7 +792,7 @@
 			
 		</script>
 		
-		<script type="text/javascript">
+		<!--script type="text/javascript">
 			// Gaug.es Analytics
 			var _gauges = _gauges || [];
 			(function() {
@@ -806,7 +805,7 @@
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(t, s);
 			})();
-		</script>
+		</script-->
 		
 	</body>
 </html>

@@ -10,6 +10,7 @@ Open source under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
   var $preview, creatorEditor, loadTemplate, showPreview;
 
   $preview = $("<div class=\"preview\" style=\"width: 373px; height: 730px;\">\n	<iframe></iframe>\n</div>");
+  $previewTablet = $("<div class=\"previewTablet\" style=\"width: 900px; height: 724px;\">\n	<iframe></iframe>\n</div>");
 
   showPreview = function(editor) {
     var preview, previewFrame;
@@ -21,6 +22,22 @@ Open source under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
       }
     });
     previewFrame = $preview.children('iframe').get(0);
+    preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+    preview.write(editor.getValue());
+    preview.close();
+  };
+
+
+  showPreviewTablet = function(editor) {
+    var preview, previewFrame;
+    Reveal.keyboardEnabled = false;
+    $previewTablet.bPopup({
+      positionStyle: 'fixed',
+      onClose: function() {
+        Reveal.keyboardEnabled = true;
+      }
+    });
+    previewFrame = $previewTablet.children('iframe').get(0);
     preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
     preview.write(editor.getValue());
     preview.close();
@@ -46,7 +63,7 @@ Open source under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
         }
         options += "</optgroup>";
       }
-      $targetSlide.append("<h2>" + data.title + "</h2>\n<textarea></textarea>\n<div style=\"display: inline-table; width: 820px;\">\n	<div style=\"display: table-cell; width: 410px; text-align: left;\">\n		<select class=\"editor-combo-box\">\n			" + options + "\n		</select>\n	</div>\n	<div style=\"display: table-cell; width: 410px; text-align: right;\">\n		<button class=\"editor-preview-button\">Preview</button>\n	</div>\n</div>\n<img class=\"editor-loading-indicator\" src=\"resource/image/LoadingIndicator.gif\" width=\"32\" height=\"32\">");
+      $targetSlide.append("<h2>" + data.title + "</h2>\n<textarea></textarea>\n<div style=\"display: inline-table; width: 820px;\">\n	<div style=\"display: table-cell; width: 410px; text-align: left;\">\n		<select class=\"editor-combo-box\">\n			" + options + "\n		</select>\n	</div>\n	<div style=\"display: table-cell; width: 410px; text-align: right;\">\n		<button class=\"editor-preview-button\">Preview Phone</button><button class=\"editor-previewtablet-button\">Preview Tablet</button>\n	</div>\n</div>\n<img class=\"editor-loading-indicator\" src=\"resource/image/LoadingIndicator.gif\" width=\"32\" height=\"32\">");
       textArea = $targetSlide.find('textarea')[0];
       $textArea = $(textArea);
       editor = CodeMirror.fromTextArea(textArea, {
@@ -73,6 +90,9 @@ Open source under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
       });
       $targetSlide.find("button.editor-preview-button").on('click', function(event) {
         return showPreview(editor);
+      });
+      $targetSlide.find("button.editor-previewtablet-button").on('click', function(event) {
+        return showPreviewTablet(editor);
       });
       Reveal.addEventListener('slidechanged', function(event) {
         return editor.refresh();

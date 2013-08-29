@@ -6,23 +6,23 @@
 			"steps": [
 				{
 					"title": "Dialog",
-					"url": "resource/data/template/exercise/dialogs/dialog.html"
+					"url": "resource/data/template/exercise/jquery-mobile/dialogs/dialog.html"
 				},
 				{
 					"title": "Basic Popup",
-					"url": "resource/data/template/exercise/popups/basic-popup.html"
+					"url": "resource/data/template/exercise/jquery-mobile/popups/basic-popup.html"
 				},
 				{
 					"title": "Menu Popup",
-					"url": "resource/data/template/exercise/popups/menu-popup.html"
+					"url": "resource/data/template/exercise/jquery-mobile/popups/menu-popup.html"
 				},
 				{
 					"title": "Photo Popup",
-					"url": "resource/data/template/exercise/popups/photo-popup.html"
+					"url": "resource/data/template/exercise/jquery-mobile/popups/photo-popup.html"
 				},
 				{
 					"title": "Map Popup",
-					"url": "resource/data/template/exercise/popups/map-popup.html"
+					"url": "resource/data/template/exercise/jquery-mobile/popups/map-popup.html"
 				}
 			]
 		},
@@ -31,23 +31,23 @@
 			"steps": [
 				{
 					"title": "Dialog",
-					"url": "resource/data/template/solution/dialogs/dialog.html"
+					"url": "resource/data/template/solution/jquery-mobile/dialogs/dialog.html"
 				},
 				{
 					"title": "Basic Popup",
-					"url": "resource/data/template/solution/popups/basic-popup.html"
+					"url": "resource/data/template/solution/jquery-mobile/popups/basic-popup.html"
 				},
 				{
 					"title": "Menu Popup",
-					"url": "resource/data/template/solution/popups/menu-popup.html"
+					"url": "resource/data/template/solution/jquery-mobile/popups/menu-popup.html"
 				},
 				{
 					"title": "Photo Popup",
-					"url": "resource/data/template/solution/popups/photo-popup.html"
+					"url": "resource/data/template/solution/jquery-mobile/popups/photo-popup.html"
 				},
 				{
 					"title": "Map Popup",
-					"url": "resource/data/template/solution/popups/map-popup.html"
+					"url": "resource/data/template/solution/jquery-mobile/popups/map-popup.html"
 				}
 			]
 		}

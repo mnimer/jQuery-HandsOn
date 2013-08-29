@@ -6,11 +6,11 @@
 			"steps": [
 				{
 					"title": "Single-page",
-					"url": "resource/data/template/exercise/pages/single-page.html"
+					"url": "resource/data/template/exercise/jquery-mobile/pages/single-page.html"
 				},
 				{
 					"title": "Multi-page",
-					"url": "resource/data/template/exercise/pages/multi-page.html"
+					"url": "resource/data/template/exercise/jquery-mobile/pages/multi-page.html"
 				}
 			]
 		},
@@ -19,11 +19,11 @@
 			"steps": [
 				{
 					"title": "Single-page",
-					"url": "resource/data/template/solution/pages/single-page.html"
+					"url": "resource/data/template/solution/jquery-mobile/pages/single-page.html"
 				},
 				{
 					"title": "Multi-page",
-					"url": "resource/data/template/solution/pages/multi-page.html"
+					"url": "resource/data/template/solution/jquery-mobile/pages/multi-page.html"
 				}
 			]
 		}

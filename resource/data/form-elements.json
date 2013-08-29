@@ -6,35 +6,35 @@
 			"steps": [
 				{
 					"title": "Text Input",
-					"url": "resource/data/template/exercise/form-elements/text-input.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/text-input.html"
 				},
 				{
 					"title": "Text Area",
-					"url": "resource/data/template/exercise/form-elements/text-area.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/text-area.html"
 				},
 				{
 					"title": "Search Input",
-					"url": "resource/data/template/exercise/form-elements/search-input.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/search-input.html"
 				},
 				{
 					"title": "Slider",
-					"url": "resource/data/template/exercise/form-elements/slider.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/slider.html"
 				},
 				{
 					"title": "Flip Toggle Switch",
-					"url": "resource/data/template/exercise/form-elements/flip-toggle-switch.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/flip-toggle-switch.html"
 				},
 				{
 					"title": "Radio Buttons",
-					"url": "resource/data/template/exercise/form-elements/radio-buttons.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/radio-buttons.html"
 				},
 				{
 					"title": "Checkboxes",
-					"url": "resource/data/template/exercise/form-elements/checkboxes.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/checkboxes.html"
 				},
 				{
 					"title": "Select Menu",
-					"url": "resource/data/template/exercise/form-elements/select-menu.html"
+					"url": "resource/data/template/exercise/jquery-mobile/form-elements/select-menu.html"
 				}
 			]
 		},
@@ -43,35 +43,35 @@
 			"steps": [
 				{
 					"title": "Text Input",
-					"url": "resource/data/template/solution/form-elements/text-input.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/text-input.html"
 				},
 				{
 					"title": "Text Area",
-					"url": "resource/data/template/solution/form-elements/text-area.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/text-area.html"
 				},
 				{
 					"title": "Search Input",
-					"url": "resource/data/template/solution/form-elements/search-input.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/search-input.html"
 				},
 				{
 					"title": "Slider",
-					"url": "resource/data/template/solution/form-elements/slider.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/slider.html"
 				},
 				{
 					"title": "Flip Toggle Switch",
-					"url": "resource/data/template/solution/form-elements/flip-toggle-switch.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/flip-toggle-switch.html"
 				},
 				{
 					"title": "Radio Buttons",
-					"url": "resource/data/template/solution/form-elements/radio-buttons.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/radio-buttons.html"
 				},
 				{
 					"title": "Checkboxes",
-					"url": "resource/data/template/solution/form-elements/checkboxes.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/checkboxes.html"
 				},
 				{
 					"title": "Select Menu",
-					"url": "resource/data/template/solution/form-elements/select-menu.html"
+					"url": "resource/data/template/solution/jquery-mobile/form-elements/select-menu.html"
 				}
 			]
 		}

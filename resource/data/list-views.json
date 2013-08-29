@@ -6,39 +6,39 @@
 			"steps": [
 				{
 					"title": "Basic List",
-					"url": "resource/data/template/exercise/list-views/basic-list.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/basic-list.html"
 				},
 				{
 					"title": "Nested List",
-					"url": "resource/data/template/exercise/list-views/nested-list.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/nested-list.html"
 				},
 				{
 					"title": "Number List",
-					"url": "resource/data/template/exercise/list-views/number-list.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/number-list.html"
 				},
 				{
 					"title": "Count Bubbles",
-					"url": "resource/data/template/exercise/list-views/count-bubbles.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/count-bubbles.html"
 				},
 				{
 					"title": "List Dividers",
-					"url": "resource/data/template/exercise/list-views/list-dividers.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/list-dividers.html"
 				},
 				{
 					"title": "Auto Dividers",
-					"url": "resource/data/template/exercise/list-views/auto-dividers.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/auto-dividers.html"
 				},
 				{
 					"title": "Search Filter Bar",
-					"url": "resource/data/template/exercise/list-views/search-filter-bar.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/search-filter-bar.html"
 				},
 				{
 					"title": "Collapsible List",
-					"url": "resource/data/template/exercise/list-views/collapsible-list.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/collapsible-list.html"
 				},
 				{
 					"title": "Lists with Form Elements",
-					"url": "resource/data/template/exercise/list-views/list-with-form-elements.html"
+					"url": "resource/data/template/exercise/jquery-mobile/list-views/list-with-form-elements.html"
 				}
 			]
 		},
@@ -47,39 +47,39 @@
 			"steps": [
 				{
 					"title": "Basic List",
-					"url": "resource/data/template/solution/list-views/basic-list.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/basic-list.html"
 				},
 				{
 					"title": "Nested List",
-					"url": "resource/data/template/solution/list-views/nested-list.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/nested-list.html"
 				},
 				{
 					"title": "Number List",
-					"url": "resource/data/template/solution/list-views/number-list.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/number-list.html"
 				},
 				{
 					"title": "Count Bubbles",
-					"url": "resource/data/template/solution/list-views/count-bubbles.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/count-bubbles.html"
 				},
 				{
 					"title": "List Dividers",
-					"url": "resource/data/template/solution/list-views/list-dividers.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/list-dividers.html"
 				},
 				{
 					"title": "Auto Dividers",
-					"url": "resource/data/template/solution/list-views/auto-dividers.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/auto-dividers.html"
 				},
 				{
 					"title": "Search Filter Bar",
-					"url": "resource/data/template/solution/list-views/search-filter-bar.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/search-filter-bar.html"
 				},
 				{
 					"title": "Collapsible List",
-					"url": "resource/data/template/solution/list-views/collapsible-list.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/collapsible-list.html"
 				},
 				{
 					"title": "Lists with Form Elements",
-					"url": "resource/data/template/solution/list-views/list-with-form-elements.html"
+					"url": "resource/data/template/solution/jquery-mobile/list-views/list-with-form-elements.html"
 				}
 			]
 		}

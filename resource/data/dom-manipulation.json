@@ -6,15 +6,15 @@
             "steps": [
                 {
                     "title": "Hide and Show Elements",
-                    "url": "resource/data/template/exercise/manipulating-html/hideOrShowElements.html"
+                    "url": "resource/data/template/exercise/jquery-mobile/manipulating-html/hideOrShowElements.html"
                 },
                 {
                     "title": "Create and Append Elements",
-                    "url": "resource/data/template/exercise/manipulating-html/createAndAppendHtml.html"
+                    "url": "resource/data/template/exercise/jquery-mobile/manipulating-html/createAndAppendHtml.html"
                 },
                 {
                     "title": "Moving Elements",
-                    "url": "resource/data/template/exercise/manipulating-html/movingHtml.html"
+                    "url": "resource/data/template/exercise/jquery-mobile/manipulating-html/movingHtml.html"
                 }
             ]
         },

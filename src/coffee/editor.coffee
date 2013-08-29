@@ -57,7 +57,8 @@ creatorEditor = ( $targetSlide ) ->
 							</select>
 						</div>
 						<div style="display: table-cell; width: 410px; text-align: right;">
-							<button class="editor-preview-button">Preview</button>
+							<button class="editor-preview-button">Preview IPhone</button>
+							<button class="editor-previewtablet-button">Preview Tablet</button>
 						</div>
 					</div>
 					<img class="editor-loading-indicator" src="resource/image/LoadingIndicator.gif" width="32" height="32">
@@ -89,6 +90,9 @@ creatorEditor = ( $targetSlide ) ->
 			)
 			$targetSlide.find( "button.editor-preview-button" ).on( 'click', ( event ) ->
 				showPreview( editor )
+			)
+			$targetSlide.find( "button.editor-previewtablet-button" ).on( 'click', ( event ) ->
+				showPreviewTablet( editor )
 			)
 			
 			# Nasty hack - workaround for weird refresh issue that left some editors in a partially rendered state.

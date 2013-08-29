@@ -6,15 +6,15 @@
 			"steps": [
 				{
 					"title": "Header bar w/buttons",
-					"url": "resource/data/template/exercise/toolbars/header.html"
+					"url": "resource/data/template/exercise/jquery-mobile/toolbars/header.html"
 				},
 				{
 					"title": "Footer bar w/buttons",
-					"url": "resource/data/template/exercise/toolbars/footer.html"
+					"url": "resource/data/template/exercise/jquery-mobile/toolbars/footer.html"
 				},
 				{
 					"title": "Navbar",
-					"url": "resource/data/template/exercise/toolbars/navbar.html"
+					"url": "resource/data/template/exercise/jquery-mobile/toolbars/navbar.html"
 				}
 			]
 		},
@@ -23,15 +23,15 @@
 			"steps": [
 				{
 					"title": "Header bar w/buttons",
-					"url": "resource/data/template/solution/toolbars/header.html"
+					"url": "resource/data/template/solution/jquery-mobile/toolbars/header.html"
 				},
 				{
 					"title": "Footer bar w/buttons",
-					"url": "resource/data/template/solution/toolbars/footer.html"
+					"url": "resource/data/template/solution/jquery-mobile/toolbars/footer.html"
 				},
 				{
 					"title": "Navbar",
-					"url": "resource/data/template/solution/toolbars/navbar.html"
+					"url": "resource/data/template/solution/jquery-mobile/toolbars/navbar.html"
 				}
 			]
 		}
