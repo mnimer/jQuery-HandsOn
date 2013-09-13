@@ -5,22 +5,26 @@
             "title": "Exercises",
             "steps": [
                 {
-                    "title": "Hide and Show Elements",
-                    "url": "resource/data/template/exercise/jquery-mobile/manipulating-html/hideOrShowElements.html"
+                    "title": "Add Images",
+                    "url": "resource/data/template/exercise/dom/add-images.html"
                 },
                 {
-                    "title": "Create and Append Elements",
-                    "url": "resource/data/template/exercise/jquery-mobile/manipulating-html/createAndAppendHtml.html"
-                },
-                {
-                    "title": "Moving Elements",
-                    "url": "resource/data/template/exercise/jquery-mobile/manipulating-html/movingHtml.html"
+                    "title": "Move Students",
+                    "url": "resource/data/template/exercise/dom/move-images.html"
                 }
             ]
         },
         {
             "title": "Solutions",
             "steps": [
+                {
+                    "title": "Add Images",
+                    "url": "resource/data/template/solution/dom/add-images.html"
+                },
+                {
+                    "title": "Move Students",
+                    "url": "resource/data/template/solution/dom/move-images.html"
+                }
             ]
         }
     ]

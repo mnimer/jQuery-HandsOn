@@ -1,0 +1,55 @@
+<html>
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <script type="application/javascript">
+        function clickHandler()
+        {
+            $("img").hide(); // hide all images
+            $("img[data-name='Mike']").show(); // turn mike back on
+        }
+    </script>
+</html>
+<body>
+
+<button onclick="clickHandler()">Find Mike</button>
+<hr/>
+<ul id="peopleList">
+    <li class="person"><img src="resource/image/people/angela.jpg" data-name="Angela"></li>
+    <li class="person"><img src="resource/image/people/anna.jpg" data-name="Anna"></li>
+    <li class="person"><img src="resource/image/people/ben.jpg" data-name="Ben"></li>
+    <li class="person"><img src="resource/image/people/bonnie.jpg" data-name="Bonnie"></li>
+    <li class="person"><img src="resource/image/people/brad.png" data-name="Brad"></li>
+    <li class="person"><img src="resource/image/people/chris.jpg" data-name="Chris"></li>
+    <li class="person"><img src="resource/image/people/christian.jpg" data-name="Christian"></li>
+    <li class="person"><img src="resource/image/people/david.jpg" data-name="David"></li>
+    <li class="person"><img src="resource/image/people/dustin.jpg" data-name="Dustin"></li>
+    <li class="person"><img src="resource/image/people/francisco.jpg" data-name="Francisco"></li>
+    <li class="person"><img src="resource/image/people/holly.JPG" data-name="Holly"></li>
+    <li class="person"><img src="resource/image/people/joe.j.jpg" data-name="Joe J."></li>
+    <li class="person"><img src="resource/image/people/joe.jpg" data-name="Joe F."></li>
+    <li class="person"><img src="resource/image/people/kellen.jpg" data-name="Kellen"></li>
+    <li class="person"><img src="resource/image/people/kelly.jpg" data-name="Kelly"></li>
+    <li class="person"><img src="resource/image/people/mike.jpg" data-name="Mike"></li>
+    <li class="person"><img src="resource/image/people/nate.jpg" data-name="Nate"></li>
+    <li class="person"><img src="resource/image/people/poppy.jpg" data-name="Poppy"></li>
+    <li class="person"><img src="resource/image/people/richard.jpg" data-name="Richard"></li>
+    <li class="person"><img src="resource/image/people/ryan.jpg" data-name="Ryan"></li>
+    <li class="person"><img src="resource/image/people/shane.jpg" data-name="Shane"></li>
+    <li class="person"><img src="resource/image/people/shelley.JPG" data-name="Shelley"></li>
+    <li class="person"><img src="resource/image/people/tommy.jpg" data-name="Tommy"></li>
+    <li class="person"><img src="resource/image/people/zoe.jpg" data-name="Zoe"></li>
+</ul>
+
+<style type="text/css">
+    ul li{
+        display: inline-block;
+        float:left;
+    }
+</style>
+</body>
+</html>

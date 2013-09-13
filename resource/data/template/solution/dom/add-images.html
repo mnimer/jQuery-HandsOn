@@ -1,0 +1,65 @@
+<html>
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <script type="application/javascript">
+        function addPerson()
+        {
+            var name = $("#studentNames").val();
+            var newImage = $("<li class='person'><img src='resource/image/people/" +name +".jpg' data-name='" +name  +"'></li>")
+            $("#peopleList").append(newImage);
+        }
+
+        function resetList()
+        {
+            $("#peopleList").empty();
+        }
+    </script>
+</html>
+<body>
+
+<select id="studentNames">
+    <option>Angela</option>
+    <option>Anna</option>
+    <option>Ben</option>
+    <option>Bonnie</option>
+    <option>Brad</option>
+    <option>Chris</option>
+    <option>Christian</option>
+    <option>David</option>
+    <option>Dustin</option>
+    <option>Francisco</option>
+    <option>Holly</option>
+    <option>Kellen</option>
+    <option>Kelly</option>
+    <option>Mike</option>
+    <option>Nate</option>
+    <option>Poppy</option>
+    <option>Richard</option>
+    <option>Ryan</option>
+    <option>Shane</option>
+    <option>Shelley</option>
+    <option>Tommy</option>
+    <option>Zoe</option>
+</select>
+<button onclick="addPerson()">Add to list</button>
+<button onclick="resetList()">Reset List</button>
+<hr/>
+<ul id="peopleList">
+    <li class="person"><img src="resource/image/people/angela.jpg" data-name="Angela"></li>
+    <li class="person"><img src="resource/image/people/anna.jpg" data-name="Anna"></li>
+    <li class="person"><img src="resource/image/people/ben.jpg" data-name="Ben"></li>
+</ul>
+
+<style type="text/css">
+    ul li{
+        display: inline-block;
+        float:left;
+    }
+</style>
+</body>
+</html>

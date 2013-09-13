@@ -166,8 +166,27 @@
                                     <td>wrap the browser object</td>
                                 </tr>
                                 <tr>
+                                    <td colspan="2">
+<pre><code>
+$(document).ready(function(){
+    alert("I've started")
+});
+
+</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>$(this)</td>
                                     <td>The owner of the function</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+<pre><code>
+var peopleList = document.getElementById("peopleList");
+$(peopleList).hide(); // now I'm a jQuery object
+
+</code></pre>
+                                    </td>
                                 </tr>
                             </table>
                             </div>

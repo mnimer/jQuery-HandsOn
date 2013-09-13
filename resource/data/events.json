@@ -4,11 +4,27 @@
         {
             "title": "Exercises",
             "steps": [
+                {
+                    "title": "Move Students on Click",
+                    "url": "resource/data/template/exercise/events/move-click.html"
+                },
+                {
+                    "title": "Highlight Current Row",
+                    "url": "resource/data/template/exercise/events/highlight-row.html"
+                }
             ]
         },
         {
             "title": "Solutions",
             "steps": [
+                {
+                    "title": "Move Students on Click",
+                    "url": "resource/data/template/solution/events/move-click.html"
+                },
+                {
+                    "title": "Highlight Current Row",
+                    "url": "resource/data/template/solution/events/highlight-row.html"
+                }
             ]
         }
     ]

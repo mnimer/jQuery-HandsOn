@@ -2,26 +2,53 @@
     "title": "Selection Expressions",
     "sections": [
         {
-            "title": "Examples",
-            "steps": [
-                {
-                    "title": "document.ready",
-                    "url": "resource/data/template/examples/selections/document-ready.html"
-                }
-            ]
-        },
-        {
             "title": "Exercises",
             "steps": [
                 {
-                    "title": "Selections",
-                    "url": "resource/data/template/examples/selections/selectById.html"
+                    "title": "Select By Tag",
+                    "url": "resource/data/template/exercise/selections/select-by-tag.html"
+                },
+                {
+                    "title": "Select By Class",
+                    "url": "resource/data/template/exercise/selections/select-by-class.html"
+                },
+                {
+                    "title": "Select Child by ID & Tag",
+                    "url": "resource/data/template/exercise/selections/select-child-id-tag.html"
+                },
+                {
+                    "title": "Select By 'data-name' Attribute",
+                    "url": "resource/data/template/exercise/selections/select-by-data-name.html"
+                },
+                {
+                    "title": "Select EVEN Rows",
+                    "url": "resource/data/template/exercise/selections/select-even-rows.html"
                 }
             ]
         },
         {
             "title": "Solutions",
             "steps": [
+                {
+                    "title": "Select By Tag",
+                    "url": "resource/data/template/solution/selections/select-by-tag.html"
+                },
+                {
+                    "title": "Select By Class",
+                    "url": "resource/data/template/solution/selections/select-by-class.html"
+                },
+                {
+                    "title": "Select Child by ID & Tag",
+                    "url": "resource/data/template/solution/selections/select-child-id-tag.html"
+                },
+                {
+                    "title": "Select By 'data-name' Attribute",
+                    "url": "resource/data/template/solution/selections/select-by-data-name.html"
+                },
+                {
+                    "title": "Select EVEN Rows",
+                    "url": "resource/data/template/solution/selections/select-even-rows.html"
+                }
             ]
         }
     ]
