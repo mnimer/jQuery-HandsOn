@@ -5,14 +5,6 @@
             "title": "Examples",
             "steps": [
                 {
-                    "title": "Selections",
-                    "url": "resource/data/template/examples/selections/selectById.html"
-                },
-                {
-                    "title": "Radio Buttons",
-                    "url": "resource/data/template/examples/selections/radiobuttons.html"
-                },
-                {
                     "title": "document.ready",
                     "url": "resource/data/template/examples/selections/document-ready.html"
                 }
@@ -21,6 +13,10 @@
         {
             "title": "Exercises",
             "steps": [
+                {
+                    "title": "Selections",
+                    "url": "resource/data/template/examples/selections/selectById.html"
+                }
             ]
         },
         {

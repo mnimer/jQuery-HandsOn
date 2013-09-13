@@ -12,9 +12,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		
-		<!-- Avenir fonts via fonts.com
-		<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/1af287b9-8247-4e14-8d41-71a662c811fc.css"/-->
-		
+
 		<link rel="stylesheet" href="lib/reveal.js/css/main.css">
 		<link rel="stylesheet" href="resource/css/theme/um.css" id="theme">
 		<link rel="stylesheet" href="lib/reveal.js/lib/css/zenburn.css">
@@ -68,7 +66,7 @@
 
 
                 <section>
-                    <h2>World of JQuery / Foundation Projects</h2>
+                    <h2>JQuery Projects</h2>
                     <div style="display: inline-table; width: 816px; height: 418px">
                         <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                             <ul>
@@ -102,9 +100,10 @@
                     <div style="display: inline-table; width: 816px; height: 418px">
                         <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                             <ul>
-                                <li>AngularJS, KendoUI, TBD, TBD</li>
+                                <li>AngularJS, KendoUI</li>
                                 <li>Twitter Bootstrap</li>
                                 <li>Thousands of Widgets/Plugins!</li>
+                                <li>Everybody!</li>
                             </ul>
                         </div>
                     </div>
@@ -123,6 +122,7 @@
                     <img width="816" height="209" src="resource/image/jQuery.png" alt="jQuery">
                     <div style="display: inline-table; width: 816px; height: 418px">
                         <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                            <h2>JQuery Essentials</h2>
                             <ul>
                                 <li>Selection Expressions</li>
                                 <li>Modify HTML</li>
@@ -142,7 +142,6 @@
                 <section>
                     <section>
                         <h2>Selection Expressions</h2>
-                        <a href="http://api.jquery.com/category/selectors/" target="_blank">http://api.jquery.com/category/selectors/</a>
                         <div style="display: inline-table; width: 816px; height: 418px">
                             <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                                 <ul>
@@ -151,6 +150,7 @@
                                     <li>Child Selectors</li>
                                     <li>Attribute Selections</li>
                                     <li>Selection Helpers</li>
+                                    <li><a href="http://api.jquery.com/category/selectors/" target="_blank">JQuery Documentation</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -181,15 +181,15 @@
                                 <table cellspacing="1" >
                                     <tr>
                                         <td>$("img")</td>
-                                        <td>Select all images on the page.</td>
+                                        <td>Select By Tag <br/> Select all image &lt;img/&gt; tags on the page.</td>
                                     </tr>
                                     <tr>
                                         <td>$(".myClass")</td>
-                                        <td>Select all elements with the CSS class="myClass".</td>
+                                        <td>Select By CSS Class <br/> Select all tags with the CSS class="myClass".</td>
                                     </tr>
                                     <tr>
                                         <td>$("#myObjectById")</td>
-                                        <td>Select element with the id='myObjectById'.</td>
+                                        <td>Select by Id <br/> Select tag with the id='myObjectById'.</td>
                                     </tr>
                                 </table>
                             </div>
@@ -203,15 +203,15 @@
                                 <table border="1">
                                     <tr>
                                         <td>$("p > a")</td>
-                                        <td>Select all a tags directly inside paragraphs.</td>
+                                        <td>Select all &lt;a/&gt; tags directly inside paragraphs &lt;p/&gt; tags.</td>
                                     </tr>
                                     <tr>
                                         <td>$("p a")</td>
-                                        <td>Select all a tags, at any level, inside a paragraph.</td>
+                                        <td>Select all &lt;a/&gt; tags, at any level, inside a paragraph &lt;a/&gt; tag.</td>
                                     </tr>
                                     <tr>
                                         <td>$("div.myClass")</td>
-                                        <td>Select all elements with the class="myClass" inside of a DIV.</td>
+                                        <td>Select all &lt;div/&gt; tags with the class="myClass".</td>
                                     </tr>
 
                                     <tr>
@@ -230,23 +230,23 @@
                                 <table border="1">
                                     <tr>
                                         <td nowrap>$("div[data-type])</td>
-                                        <td>Select all DIV elements with a "data-type" attribute</td>
+                                        <td>Select all DIV tags with a "data-type" attribute</td>
                                     </tr>
                                     <tr>
                                         <td nowrap>$("div[data-type='user'])</td>
-                                        <td>Select all DIV elements with data-type='user'</td>
+                                        <td>Select all DIV tags with data-type='user'</td>
                                     </tr>
                                     <tr>
                                         <td nowrap>$("div[data-type*='user'])</td>
-                                        <td>Select all DIV elements with data-type that contains 'user'</td>
+                                        <td>Select all DIV tags with data-type that contains 'user'</td>
                                     </tr>
                                     <tr>
                                         <td nowrap>$("div[data-type$='user'])</td>
-                                        <td>Select all DIV elements with data-type that ends with 'user'</td>
+                                        <td>Select all DIV tags with data-type that ends with 'user'</td>
                                     </tr>
                                     <tr>
                                         <td nowrap>$("div[data-type|='user'])</td>
-                                        <td>Select all DIV elements with data-type that starts with 'user'</td>
+                                        <td>Select all DIV tags with data-type that starts with 'user'</td>
                                     </tr>
                                 </table>
                             </div>
@@ -264,11 +264,11 @@
                                     </tr>
                                     <tr>
                                         <td>$(":disabled")</td>
-                                        <td>Select all elements that are disabled.</td>
+                                        <td>Select all tags that are disabled.</td>
                                     </tr>
                                     <tr>
                                         <td>$(":even")  or: $("td:even")</td>
-                                        <td>Select every other element starting with even.</td>
+                                        <td>Select every other tags starting with even.</td>
                                     </tr>
                                     <tr>
                                         <td>$(":hidden") or $("div:hidden")</td>
@@ -299,6 +299,7 @@
                                     <li>Hide or Show elements</li>
                                     <li>Create and Append new HTML</li>
                                     <li>Moving HTML</li>
+                                    <li><a href="http://api.jquery.com/category/manipulation/" target="_blank">JQuery Documentation</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -310,8 +311,16 @@
                             <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                                 <table border="1">
                                     <tr>
-                                        <td></td>
-                                        <td></td>
+                                        <td>$(...).hide()</td>
+                                        <td>Hide the matched elements</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).show()</td>
+                                        <td>Show the matched elements</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).toggle()</td>
+                                        <td>Flip the hide/show state of an element</td>
                                     </tr>
                                 </table>
                             </div>
@@ -324,8 +333,41 @@
                             <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                                 <table border="1">
                                     <tr>
-                                        <td></td>
-                                        <td></td>
+                                        <td>$(html string)</td>
+                                        <td>Create new HTML based on string.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).html()</td>
+                                        <td>Get the HTML of the selected TAG, or set new HTML</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).append()</td>
+                                        <td>Insert content to the end</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).empty()</td>
+                                        <td>Remove all html inside of a selected TAG</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>HTML Attributes</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>
+                                            $(...).attr(name)
+                                            $(...).attr(name, value)
+                                        </td>
+                                        <td>Get the value of an tag attribute, or set new attribute.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).removeAttr(name)</td>
+                                        <td>Remove an attribute from a tag.</td>
                                     </tr>
                                 </table>
                             </div>
@@ -338,8 +380,12 @@
                             <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
                                 <table border="1">
                                     <tr>
-                                        <td></td>
-                                        <td></td>
+                                        <td>$(...).detach() with $(...).append()</td>
+                                        <td>Remove the selected HTML and add it to another part of the page.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).position()</td>
+                                        <td>Get the TOP & LEFT properties of the selected tag. </td>
                                     </tr>
                                 </table>
                             </div>
@@ -353,15 +399,93 @@
                     * Events
                     **************************************************** -->
                 <section>
-                    <h2>Events</h2>
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>TBD Item 1</li>
-                                <li>TBD Item 2</li>
-                            </ul>
+                    <section>
+                        <h2>Events</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>Custom Event Listeners</li>
+                                    <li>Dispatch Events</li>
+                                    <li>Event Properties</li>
+                                    <li><a href="http://api.jquery.com/category/events/" target="_blank">JQuery Documentation</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <section>
+                        <h2>Custom Event Listeners</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td nowrap>$(...).on(name, function)</td>
+                                        <td>Attach an event handler function for one or more events to the selected elements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$(...).off()</td>
+                                        <td>Remove an event handler.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.bind(), .delegate(), .live()</td>
+                                        <td>These have been deprecated. always use .on()</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Dispatch Events</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>$(...).trigger</td>
+                                        <td>
+                                            Execute all handlers and behaviors attached to the matched elements for the given event type.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Standard Browser/JS Events</td>
+                                        <td>
+                                            onclick, onmouseover, ontouch, etc...
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Event Properties</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>event.target</td>
+                                        <td>The DOM element that initiated the event.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>event.data</td>
+                                        <td>An optional object of data passed to an event method when the current executing handler is bound.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>event.pageX</td>
+                                        <td>The mouse position relative to the left edge of the document.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>event.pageY</td>
+                                        <td>The mouse position relative to the top edge of the document.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>event.type</td>
+                                        <td>Describes the nature of the event.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
                 </section>
                 <section class="editor" data-source="resource/data/events.json"></section>
 
@@ -370,15 +494,109 @@
                     * AJAX
                     **************************************************** -->
                 <section>
-                    <h2>AJAX</h2>
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>TBD Item 1</li>
-                                <li>TBD Item 2</li>
-                            </ul>
+                    <section>
+                        <h2>AJAX</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>AJAX Requests (GET)</li>
+                                    <li>AJAX Requests (POST)</li>
+                                    <li><a href="http://api.jquery.com/category/ajax/" target="_blank">JQuery Documentation</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <section>
+                        <h2>AJAX Requests (GET DATA)</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>$.ajax()</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+
+
+<pre><code data-trim>
+var request = $.ajax({
+    type: "GET",
+    url: "/users.json?id=1234",
+    dataType: "json"
+});
+
+request.done( function(data) )
+{
+    alert("I have data");
+});
+
+request.fail( function(data) )
+{
+    alert("ERROR ERROR");
+});
+</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>AJAX Requests (POST DATA)</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>$.ajax()</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+
+
+<pre><code data-trim>
+var userObj = {name:"mike", friend:"Kellen", id:"123"};
+
+var request = $.ajax({
+    type: "POST",
+    url: "/users.json",
+    data: userObj
+});
+
+request.done( function(data)
+{
+    alert("I saved the data");
+});
+</code></pre>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>AJAX Requests (POST DATA)</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <table border="1">
+                                    <tr>
+                                        <td>$.post()</td>
+                                        <td>Wrapper object</td>
+                                    </tr>
+                                </table>
+
+
+<pre><code data-trim>
+var userObj = {name:"mike", friend:"Kellen", id:"123"};
+
+var request = $.post("/users.json", userObj);
+
+request.done( function(data)
+{
+    alert("I saved the data");
+});
+</code></pre>
+
+                            </div>
+                        </div>
+                    </section>
                 </section>
                 <section class="editor" data-source="resource/data/ajax.json"></section>
 
@@ -634,34 +852,91 @@
 
 
                 <section>
-                    <h2>Navigation</h2>
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <img width="408" height="418" src="resource/image/Navigation.png" alt="Ajax Logo">
-                        <div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>Ajax-based page loading and navigation system.</li>
-                                <li>Pages injected into DOM with animated transitions.</li>
-                                <li>Maintains 'Back' button and bookmarking support.</li>
-                            </ul>
+                    <section>
+                        <h2>Navigation</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <img width="408" height="418" src="resource/image/Navigation.png" alt="Ajax Logo">
+                            <div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>Ajax-based page loading and navigation system.</li>
+                                    <li>Pages injected into DOM with animated transitions.</li>
+                                    <li>Maintains 'Back' button and bookmarking support.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-				<!--section>
-					<h2>When do I use it?</h2>
-					<img width="816" height="355" src="resource/image/Spectrum.png">
+                    <section>
+                        <h2>Anatomy of a Page</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>data-role="page"</li>
+                                    <li>data-role="header, content, footer"</li>
+                                </ul>
+<pre><code data-trim>
+    &lt;div data-role="page"&gt;
+
+        &lt;div data-role="header"&gt;
+            &lt;h1&gt;Page Title&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div data-role="content"&gt;
+            &lt;p&gt;Page content goes here.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div data-role="footer"&gt;
+            &lt;h4>Page Footer&lt;/h4&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Page Linking</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 816px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>Between pages - <b>href="#id"</b></li>
+                                    <li>External Links - <b>rel="external"</b></li>
+                                    <li>Back - <b>data-rel="back"</b></li>
+                                </ul>
+
+<pre><code data-trim>
+    &lt;div id="one" data-role="page"&gt;
+        &lt;a href="#two"&gt;Go To Page TWO&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div id="two" data-role="page"&gt;
+        &lt;a data-rel="back"&gt;Back&lt;/a&gt;
+
+        &lt;a href="http://www.google.com"
+            rel="external"&gt;Go To GOOGLE&lt;/a&gt;
+    &lt;/div&gt;
+</code></pre>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+                <section class="editor" data-source="resource/data/pages.json"></section>
+
+
+				<section>
+					<h2>Components</h2>
 					<div style="display: inline-table; width: 816px; height: 418px">
-						<div style="display: table-cell; width: 272px;">
-							<p>Document</p>
-						</div>
-						<div style="display: table-cell; width: 272px;">
-							<p>Interactive</p>
-						</div>
-						<div style="display: table-cell; width: 272px;">
-							<p>Application</p>
-						</div>
+						<ul>
+                            <li>Buttons</li>
+                            <li>Forms</li>
+                            <li>Lists</li>
+                            <li>Toolbars</li>
+                            <li>Dialogs</li>
+                            <li><a href="http://jquerymobile.com/demos/1.2.0/index.html" target="_blank">JQuery Kitchen Sink</a></li>
+						</ul>
 					</div>
-				</section-->
+				</section>
 				
 				<section class="editor" data-source="resource/data/buttons.json"></section>
 				
@@ -669,7 +944,7 @@
 				
 				<section class="editor" data-source="resource/data/list-views.json"></section>
 				
-				<section class="editor" data-source="resource/data/pages.json"></section>
+
 				
 				<section class="editor" data-source="resource/data/toolbars.json"></section>
 				
@@ -690,17 +965,16 @@
                  * Application #1
                  **************************************************** -->
                 <section>
-                    <h3>Putting it all together / Build an App</h3>
+                    <h1>Build an Application</h1>
                     <div style="display: inline-table; width: 816px; height: 418px">
                         <div style="display: table-cell; width: 408px; height: 418px; vertical-align: middle;">
                             <ul>
-                                <li>TBD Item 1</li>
-                                <li>TBD Item 2</li>
+                                <li><h2>Weather Application</h2></li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <section class="editor" data-source="resource/data/application1.json"></section>
+                <section class="editor" data-source="resource/data/app-weather.json"></section>
 
 
 
@@ -774,7 +1048,7 @@
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: false,
+				history: true,
 				mouseWheel: false,
                 backgroundTransition:'slide',
 				theme: 'um',
@@ -791,21 +1065,6 @@
 			});
 			
 		</script>
-		
-		<!--script type="text/javascript">
-			// Gaug.es Analytics
-			var _gauges = _gauges || [];
-			(function() {
-				var t   = document.createElement('script');
-				t.type  = 'text/javascript';
-				t.async = true;
-				t.id    = 'gauges-tracker';
-				t.setAttribute('data-site-id', '5065f9ac613f5d639400000e');
-				t.src = '//secure.gaug.es/track.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(t, s);
-			})();
-		</script-->
-		
+
 	</body>
 </html>
