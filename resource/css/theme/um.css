@@ -91,6 +91,40 @@ body:after {
 }
 
 
+
+/*********************************************
+ * EXAMPLES
+ *********************************************/
+
+.reveal div.example {
+    text-align: left;
+    display: table;
+}
+
+.reveal div.example div.example-row {
+    display: table-row;
+}
+
+.reveal div.example div.example-row > .example-type {
+    display: table-cell;
+}
+
+.reveal div.example div.example-row > .example-type > p {
+    background-color: #999999;
+    text-align: center;
+    margin-right: 30px;
+    color: #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 8px 20px 6px 20px;
+}
+
+.reveal > div.example > div.example-row > div.example-row p {
+    display: table-cell;
+}
+
+
 /*********************************************
  * TEXT
  *********************************************/
@@ -107,7 +141,7 @@ body:after {
     font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
     font-size: 28px;
     font-weight: 400;
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 
 .reveal p.example-code span.highlight {
