@@ -80,6 +80,42 @@ body:after {
 	font-weight: 200;
 }
 
+.reveal h5 {
+    font-family: "Avenir LT W01 95 Black", "Avenir-Black", Helvetica, Arial, sans-serif;
+    color: #666666;
+    font-size: 32px;
+    font-weight: 200;
+    padding: 30px 0px 20px 0px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
+/*********************************************
+ * TEXT
+ *********************************************/
+
+.reveal p.example-description {
+    font-family: "Avenir LT 45 Book" , "Avenir-Book", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #666666;
+    padding: 0px 0px 20px 0px;
+}
+
+.reveal p.example-code {
+    font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.reveal p.example-code span.highlight {
+    color: #149B0E !important;
+    font-weight: bold;
+}
+
+
 /*********************************************
  * LINKS
  *********************************************/
