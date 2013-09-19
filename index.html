@@ -660,6 +660,8 @@ request.done( function(data)
                                     <li>Adding a CSS class</li>
                                     <li>Removing a CSS class</li>
                                     <li>Get a style property</li>
+                                    <li>Set a style property</li>
+                                    <a href="http://api.jquery.com/category/css/" target="_blank">CSS Documentation</a>
                                 </ul>
                             </div>
                         </div>
@@ -668,20 +670,128 @@ request.done( function(data)
                         <h2>Checking for CSS classes</h2>
                         <div style="width: 100%; height: 418px">
                             <div style="width: 100%; height: 418px;">
-                                <h5>.hasClass( className )</h5>
-                                <p class="example-description">Determine whether any of the matched elements are assigned the given class</p>
+                                <h5>.hasClass( "className" )</h5>
+                                <p class="example-description">Determine whether any of the matched elements are assigned the given class.</p>
                                 <div class="example">
                                     <div class="example-row">
                                         <div class="example-type"><p>CSS</p></div>
-                                        <p class="example-code"><span class="highlight">.myDivClass { }</span></p>
+                                        <p class="example-code"><span class="highlight">.myDivClass {</span> </br><span class="light">&nbsp;&nbsp;&nbsp;&nbsp;style...</br></span> <span class="highlight">}</span></p>
                                     </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>HTML</p></div>
+                                        <p class="example-code">&lt;div id="myDiv" class="<span class="highlight">myDivClass</span>"&gt;&lt;/div&gt;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Check</p></div>
+                                        <p class="example-code">$( "#myDiv" ).<span class="highlight">hasClass( "myDivClass" )</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Adding a CSS class to an element</h2>
+                        <div style="width: 100%; height: 418px">
+                            <div style="width: 100%; height: 418px;">
+                                <h5>.addClass( "className" )</h5>
+                                <p class="example-description">Adds the specified class(es) to each of the set of matched elements.</p>
+                                <div class="example">
+                                    <div class="example-row">
+                                        <div class="example-type"><p>HTML</p></div>
+                                        <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>"&gt;&lt;/div&gt;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Add Class</p></div>
+                                        <p class="example-code">$( "#myDiv" ).<span class="highlight">addClass( "myDivClass" )</span>;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>List Items</p></div>
+                                        <p class="example-code">$( "ul li" ).each( function(){
+                                            </br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;$(this).<span class="highlight">addClass( 'myDivClass' )</span>;
+                                            </br>
+                                            });</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Children</p></div>
+                                        <p class="example-code">$( #myDiv ).children().<span class="highlight">addClass( 'myDivClass' )</span>;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Removing a CSS class</h2>
+                        <div style="width: 100%; height: 418px">
+                            <div style="width: 100%; height: 418px;">
+                                <h5>.removeClass( "className" )</h5>
+                                <p class="example-description">Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</p>
+                                <div class="example">
                                     <div class="example-row">
                                         <div class="example-type"><p>HTML</p></div>
                                         <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>" class="<span class="highlight">myDivClass</span>"&gt;&lt;/div&gt;</p>
                                     </div>
                                     <div class="example-row">
-                                        <div class="example-type"><p>jQuery</p></div>
-                                        <p class="example-code">$( "#myDiv" ).<span class="highlight">hasClass</span>( "<span class="highlight">myDivClass</span>" )</p>
+                                        <div class="example-type"><p>Remove</p></div>
+                                        <p class="example-code">$( #myDiv ).<span class="highlight">removeClass( "myDivClass" )</span>;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Add</p></div>
+                                        <p class="example-code">$( #myDiv ).<span class="highlight">removeClass( "class" )</span>.<span class="highlight">addClass( 'newClass' );</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Children</p></div>
+                                        <p class="example-code">$( #myDiv ).children().<span class="highlight">removeClass( 'myDivClass' )</span>;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Getting a style property</h2>
+                        <div style="width: 100%; height: 418px">
+                            <div style="width: 100%; height: 418px;">
+                                <h5>.css( "propertyName" )</h5>
+                                <p class="example-description">Get the value of style properties for the first element in the set of matched elements.</p>
+                                <div class="example">
+                                    <div class="example-row">
+                                        <div class="example-type"><p>HTML</p></div>
+                                        <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>" style="<span class="highlight">color: #333333;</span>"&gt;&lt;/div&gt;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Exmple</p></div>
+                                        <p class="example-code">var colorStyle = $( #myDiv ).<span class="highlight">css( "color" )</span>;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Multiple</p></div>
+                                        <p class="example-code">$( #myDiv ).<span class="highlight">css( [ "color", "font-family", "width" ] )</span>;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Setting a style property</h2>
+                        <div style="width: 100%; height: 418px">
+                            <div style="width: 100%; height: 418px;">
+                                <h5>.css( "propertyName", "value" )</h5>
+                                <p class="example-description">Set one or more CSS properties for the set of matched elements.</p>
+                                <div class="example">
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Set</p></div>
+                                        <p class="example-code">$( #myDiv ).<span class="highlight">css( "color", "red" )</span>;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Multiple</p></div>
+                                        <p class="example-code">$( #myDiv ).<span class="highlight">css( { "color": "red", "font-weight": "bold" } )</span>;</p>
+                                    </div>
+                                    <div class="example-row">
+                                        <div class="example-type"><p>Mouse</p></div>
+                                        <p class="example-code">$( #myDiv ).on( "mouseenter", function() {
+                                            </br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;$( this ).<span class="highlight">css( { "color": "red", "font-weight": "bold" })</span>;
+                                            </br>
+                                            })</p>
                                     </div>
                                 </div>
                             </div>
