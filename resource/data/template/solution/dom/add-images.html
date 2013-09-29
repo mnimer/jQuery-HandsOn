@@ -10,7 +10,7 @@
         function addPerson()
         {
             var name = $("#studentNames").val();
-            var newImage = $("<li class='person'><img src='resource/image/people/" +name +".jpg' data-name='" +name  +"'></li>")
+            var newImage = $("<li class='person'><img src='resource/image/people/" +name.toLowerCase() +".jpg' data-name='" +name  +"'></li>")
             $("#peopleList").append(newImage);
         }
 
