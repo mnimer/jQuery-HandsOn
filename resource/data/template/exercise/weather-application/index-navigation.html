@@ -13,8 +13,7 @@
     <script type="application/javascript">
         $(document).bind('ready', function ()
         {
-            $(document).on("swiperight", function (event) { swipeRight(event); });
-            $(document).on("swipeleft", function (event) { swipeLeft(event); });
+            // TODO: Add event listeners for SWIPE RIGHT & LEFT
 
         });
 
@@ -23,19 +22,15 @@
         //todo: add .closest to selector screen in slides
         var swipeRight = function(event)
         {
-            var prev = $(event.target).closest("div[data-role='page']").jqmData("prev");
-            if( prev != undefined )
-            {
-                $.mobile.changePage( "#" +prev, { transition: "slide", reverse: true  } );
-            }
+            // TODO: SELECT name of PREV page, using .closest() of event.target
+
+            // TODO: DO a reverse transition to the PREV page
         };
         var swipeLeft = function(event)
         {
-            var next = $(event.target).closest("div[data-role='page']").jqmData("next");
-            if( next != undefined )
-            {
-                $.mobile.changePage( "#" +next, { transition: "slide" } );
-            }
+            // TODO: SELECT name of NEXT page, using .closest() of event.target
+
+            // TODO: DO a transition to the NEXT page
         };
     </script>
 </head>
@@ -55,10 +50,12 @@
         <ul data-role="listview" data-inset="true">
             <li><a href="#city-newyork">New York</a></li>
             <li><a href="#city-grandrapids">Grand Rapids</a></li>
-            <li><a href="#city-sanfrancisco">San Francisco</a></li>
-            <li><a href="#city-chicago">Chicago</a></li>
-            <li><a href="#city-miami">Miami</a></li>
-            <li><a href="#city-boston">Boston</a></li>
+
+            <!-- TODO: add San Francisco -->
+            <!-- TODO: add Chicago-->
+            <!-- TODO: add Miami-->
+            <!-- TODO: add Boston-->
+
         </ul>
     </div>
 </div>
@@ -79,32 +76,11 @@
     </div>
 </div>
 
-<div id="city-sanfrancisco" data-role="page"
-     data-prev="city-grandrapids" data-next="city-chicago">
-    <div data-role="content">
-        San Francisco
-    </div>
-</div>
+<!-- TODO: add San Francisco -->
+<!-- TODO: add Chicago-->
+<!-- TODO: add Miami-->
+<!-- TODO: add Boston-->
 
-<div id="city-chicago" data-role="page"
-     data-prev="city-sanfrancisco" data-next="city-miami">
-    <div data-role="content">
-        Chicago
-    </div>
-</div>
 
-<div id="city-miami" data-role="page"
-     data-prev="city-chicago" data-next="city-boston">
-    <div data-role="content">
-        Miami
-    </div>
-</div>
-
-<div id="city-boston" data-role="page"
-     data-prev="city-miami" data-next="locations">
-    <div data-role="content">
-        Boston
-    </div>
-</div>
 </body>
 </html>

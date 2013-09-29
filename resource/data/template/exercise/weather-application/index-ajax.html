@@ -296,34 +296,9 @@ body {
      * Call the ajax service to get the weather data, then update the css and html values.
      * @param cityId
      */
-    function loadWeather(cityId)
-    {
+    // TODO: add loadWeatherData(cityId) function
+    // TODO: set the right html for the returned data
 
-        $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?id=" + cityId,
-            type: "GET",
-            dataType: "JSONP"
-        })
-        .done(function (data, textStatus, jqXHR)
-        {
-            var temp = convertTemp(data.main.temp);
-            var highTemp = convertTemp(data.main.temp_max);
-            var lowTemp = convertTemp(data.main.temp_min);
-
-            $(".cityList > div[data-cityid="  +data.id  +"] > .temp").html( temp +"&#176;" );
-            $(".cityList > div[data-cityid="  +data.id  +"] > .status").html(data.weather[0].description);
-
-
-
-            $(".city-page[data-cityid="  +data.id  +"] .temp .high").html( highTemp +"&#176;" );
-            $(".city-page[data-cityid="  +data.id  +"] .temp .low").html( lowTemp +"&#176;" );
-            $(".city-page[data-cityid="  +data.id  +"] .humidity span").html( data.main.humidity +"%" );
-            $(".city-page[data-cityid="  +data.id  +"] .status").html( data.weather[0].description );
-            $(".city-page[data-cityid="  +data.id  +"] .icon img").attr( "src", "/resource/image/" +data.weather[0].icon +".png" );
-
-            updateCss(cityId, temp);
-        });
-    }
 
     //AJAX STEP
     function convertTemp(kelvin)
@@ -350,14 +325,12 @@ body {
         else if( temp >= 35 ){ tempClass = "temp35";}
         else { tempClass = "temp35";}
 
-        // remove default temp class
-        var cityListDiv = $(".cityList > div[data-cityid=" +cityId +"]");
-        $(cityListDiv).addClass(tempClass);
-        $(cityListDiv).removeClass("temp0");
+        // TODO remove temp0 and add the right temp class for
+        // $(".cityList > div[data-cityid=" +cityId +"]");
 
-        var cityDiv = $(".city-page[data-cityid=" +cityId +"]  > div");
-        cityDiv.addClass(tempClass);
-        cityDiv.removeClass("temp0");
+        // TODO remove temp0 and add the right temp class for
+        // $(".city-page[data-cityid=" +cityId +"]  > div");
+
     }
 
 </script>

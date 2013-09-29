@@ -146,84 +146,7 @@
 
 
 
-        /********************
-        ** City Page Styles
-        ********************/
-        .city-page .city {
-            height: 100%;
-            color: rgba(0, 0, 0, .35);
-            text-align: center;
-            font-family: Helvetica Neue, Helvetica, Arial, san-serif;
-            line-height: 120%;
-            text-shadow: 0 0px 0; /* override jquery mobile default */
-
-        }
-
-            .city-page .city > div {
-                font-size: 16px;
-                margin-top: 20px;
-            }
-
-            .city-page .city > .name {
-                font-size: 26px;
-            }
-
-            .city-page .city > .icon {
-                margin-top: 40px;
-            }
-
-            .city-page .city > .status {
-                margin-top: 40px;
-            }
-
-            .city-page .city > .temp {
-                font-size: 46px;
-                font-family: HelveticaNeue-Light, Helvetica Neue, Helvetica, Arialsan-serif;
-            }
-
-            .city-page .city > .temp .high {
-                color: #ffffff;
-            }
-
-
-        .city-page .indicators {
-            position: relative;
-            top: 8px;
-            margin-left: 35%;
-            font-size:21px !important;
-        }
-
-        /* override */
-        .city-page .ui-footer .locationListBtn {
-            top: 4px;
-            left: 15px;
-            position: absolute;
-            background-color: rgba(0, 0, 0, .35) !important;
-
-            border: 0px;
-            -webkit-border-radius: 0 !important;
-            border-radius: 0 !important;
-
-            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .35)), to(rgba(0, 0, 0, .35))) !important;
-            background-image: -webkit-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: -moz-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: -ms-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: -o-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-        }
-
-        .city-page .ui-footer {
-            vertical-align: middle;
-
-            height: 42px;
-            border: 0px;
-            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .35)), to(rgba(0, 0, 0, .35))) !important;
-            background-image: -webkit-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: -moz-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: -ms-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: -o-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-            background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-        }
+        /**TODO add City Styles**/
 
     </style>
 
@@ -391,109 +314,11 @@
 
 
 
-
-<div id="city-sanfrancisco" data-role="page"
-     data-prev="city-grandrapids" data-next="city-chicago"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">San Francisco</div>
-        <div class="icon">
-            <img src="resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span></div>
-        <div class="humidity">
-            <img src="resource/image/icon-humidity.png"> 35%</div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9675; &#9679; &#9675; &#9675; &#9675;</span>
-    </div>
-</div>
+<!-- TODO: add San Francisco -->
+<!-- TODO: add Chicago-->
+<!-- TODO: add Miami-->
+<!-- TODO: add Boston-->
 
 
-
-
-
-<div id="city-chicago" data-role="page"
-     data-prev="city-sanfrancisco" data-next="city-miami"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Chicago</div>
-        <div class="icon">
-            <img src="resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span></div>
-        <div class="humidity">
-            <img src="resource/image/icon-humidity.png"> 35%</div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators"> &#9675; &#9675; &#9675; &#9679; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-miami" data-role="page"
-     data-prev="city-chicago" data-next="city-boston"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Miami</div>
-        <div class="icon">
-            <img src="resource/image/Cloud.png"/>
-        </div>
-        <div class="status">Cloudy</div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span></div>
-        <div class="humidity">
-            <img src="resource/image/icon-humidity.png"> 35%</div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators"> &#9675; &#9675; &#9675; &#9675; &#9679; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-boston" data-role="page"
-     data-prev="city-miami" data-next="locations"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Boston</div>
-        <div class="icon">
-            <img src="resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span></div>
-        <div class="humidity">
-            <img src="resource/image/icon-humidity.png"> 35%</div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9675; &#9675; &#9675; &#9675; &#9675; &#9679;</span>
-    </div>
-</div>
 </body>
 </html>
