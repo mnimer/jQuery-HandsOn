@@ -193,7 +193,7 @@ body {
 .city-page .indicators {
     position: relative;
     top: 8px;
-    margin-left: 42%;
+    margin-left: 100px;
     font-size:21px !important;
 }
 
@@ -301,10 +301,13 @@ body {
             $(".cityList > div[data-cityid="  +data.id  +"] > .temp").html( temp +"&#176;" );
             $(".cityList > div[data-cityid="  +data.id  +"] > .status").html(data.weather[0].description);
 
-            alert($(".city-page > div[data-cityid="  +data.id  +"] > .temp .high").html());
-            $(".city-page > div[data-cityid="  +data.id  +"] > .temp .high").html( highTemp +"&#176;" );
-            $(".city-page > div[data-cityid="  +data.id  +"] > .temp .low").html( lowTemp +"&#176;" );
-            $(".city-page > div[data-cityid="  +data.id  +"] > .humidity span").html( data.main.humidity +"%" );
+
+
+            $(".city-page[data-cityid="  +data.id  +"] .temp .high").html( highTemp +"&#176;" );
+            $(".city-page[data-cityid="  +data.id  +"] .temp .low").html( lowTemp +"&#176;" );
+            $(".city-page[data-cityid="  +data.id  +"] .humidity span").html( data.main.humidity +"%" );
+            $(".city-page[data-cityid="  +data.id  +"] .status").html( data.weather[0].description );
+            $(".city-page[data-cityid="  +data.id  +"] .icon img").attr( "src", "/resource/image/" +data.weather[0].icon +".png" );
 
             updateCss(cityId, temp);
         });
@@ -362,7 +365,7 @@ body {
                  data-cityid="5128581"
                  onclick="$.mobile.navigate('#city-newyork')">
                 <div class="cityHeader">
-                    <img src="images/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">New York</div>
                 <div class="status"></div>
@@ -374,7 +377,7 @@ body {
                  data-cityid="4994358"
                  onclick="$.mobile.navigate('#city-grandrapids')">
                 <div class="cityHeader">
-                    <img src="images/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">Grand Rapids</div>
                 <div class="status"></div>
@@ -386,7 +389,7 @@ body {
                  data-cityid="5391959"
                  onclick="$.mobile.navigate('#city-sanfrancisco')">
                 <div class="cityHeader">
-                    <img src="images/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">San Francisco</div>
                 <div class="status"></div>
@@ -398,7 +401,7 @@ body {
                  data-cityid="4887398"
                  onclick="$.mobile.navigate('#city-chicago')">
                 <div class="cityHeader">
-                    <img src="images/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">Chicago</div>
                 <div class="status"></div>
@@ -410,7 +413,7 @@ body {
                  data-cityid="4164138"
                  onclick="$.mobile.navigate('#city-miami')">
                 <div class="cityHeader">
-                    <img src="images/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">Miami</div>
                 <div class="status"></div>
@@ -422,7 +425,7 @@ body {
                  data-cityid="4930956"
                  onclick="$.mobile.navigate('#city-boston')">
                 <div class="cityHeader">
-                    <img src="images/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">Boston</div>
                 <div class="status"></div>
@@ -440,7 +443,7 @@ body {
     <div data-role="content" class="city temp0">
         <div class="name">New York</div>
         <div class="icon">
-            <img src="images/Cloud.png"/>
+            <img src="/resource/image/Cloud.png"/>
         </div>
         <div class="status"></div>
         <div class="temp">
@@ -449,12 +452,12 @@ body {
             <span class="low">0&#176;</span>
         </div>
         <div class="humidity">
-            <img src="images/icon-humidity.png"> <span>0%</span>
+            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
         </div>
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="images/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/></a>
         <span class="indicators">&#9679; &#9675; &#9675; &#9675; &#9675; &#9675; </span>
     </div>
 </div>
@@ -468,7 +471,7 @@ body {
     <div data-role="content" class="city temp0">
         <div class="name">Grand Rapids</div>
         <div class="icon">
-            <img src="images/Cloud.png"/>
+            <img src="/resource/image/Cloud.png"/>
         </div>
         <div class="status"></div>
         <div class="temp">
@@ -477,12 +480,12 @@ body {
             <span class="low">0&#176;</span>
         </div>
         <div class="humidity">
-            <img src="images/icon-humidity.png"> <span>0%</span>
+            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
         </div>
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="images/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/></a>
         <span class="indicators">&#9675; &#9679; &#9675; &#9675; &#9675; &#9675; &#9675;</span>
     </div>
 </div>
@@ -497,7 +500,7 @@ body {
     <div data-role="content" class="city temp0">
         <div class="name">San Francisco</div>
         <div class="icon">
-            <img src="images/Cloud.png"/>
+            <img src="/resource/image/Cloud.png"/>
         </div>
         <div class="status"></div>
         <div class="temp">
@@ -506,12 +509,12 @@ body {
             <span class="low">0&#176;</span>
         </div>
         <div class="humidity">
-            <img src="images/icon-humidity.png"> <span>0%</span>
+            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
         </div>
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="images/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/></a>
         <span class="indicators">&#9675; &#9675; &#9679; &#9675; &#9675; &#9675;</span>
     </div>
 </div>
@@ -527,7 +530,7 @@ body {
     <div data-role="content" class="city temp0">
         <div class="name">Chicago</div>
         <div class="icon">
-            <img src="images/Cloud.png"/>
+            <img src="/resource/image/Cloud.png"/>
         </div>
         <div class="status"></div>
         <div class="temp">
@@ -536,12 +539,12 @@ body {
             <span class="low">0&#176;</span>
         </div>
         <div class="humidity">
-            <img src="images/icon-humidity.png"> <span>0%</span>
+            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
         </div>
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="images/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/></a>
         <span class="indicators"> &#9675; &#9675; &#9675; &#9679; &#9675; &#9675;</span>
     </div>
 </div>
@@ -557,9 +560,8 @@ body {
     <div data-role="content" class="city temp0">
         <div class="name">Miami</div>
         <div class="icon">
-            <img src="images/Cloud.png"/>
+            <img src="/resource/image/Cloud.png"/>
         </div>
-        <div class="status">Cloudy</div>
         <div class="status"></div>
         <div class="temp">
             <span class="high">0&#176;</span>
@@ -567,12 +569,12 @@ body {
             <span class="low">0&#176;</span>
         </div>
         <div class="humidity">
-            <img src="images/icon-humidity.png"> <span>0%</span>
+            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
         </div>
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="images/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/></a>
         <span class="indicators"> &#9675; &#9675; &#9675; &#9675; &#9679; &#9675;</span>
     </div>
 </div>
@@ -588,9 +590,8 @@ body {
     <div data-role="content" class="city temp0">
         <div class="name">Boston</div>
         <div class="icon">
-            <img src="images/Cloud.png"/>
+            <img src="/resource/image/Cloud.png"/>
         </div>
-        <div class="status">Cloudy</div>
         <div class="status"></div>
         <div class="temp">
             <span class="high">0&#176;</span>
@@ -598,12 +599,12 @@ body {
             <span class="low">0&#176;</span>
         </div>
         <div class="humidity">
-            <img src="images/icon-humidity.png"> <span>0%</span>
+            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
         </div>
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="images/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/></a>
         <span class="indicators">&#9675; &#9675; &#9675; &#9675; &#9675; &#9675; &#9679;</span>
     </div>
 </div>

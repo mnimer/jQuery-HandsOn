@@ -1,0 +1,30 @@
+{
+    "title": "Weather Application",
+    "sections": [
+        {
+            "title": "Solutions",
+            "steps": [
+                {
+                    "title": "Step 1",
+                    "url": "resource/data/template/solution/weather-application/index.html"
+                },
+                {
+                    "title": "Step 2 - Navigation",
+                    "url": "resource/data/template/solution/weather-application/index-navigation.html"
+                },
+                {
+                    "title": "Step 3 - style location list",
+                    "url": "resource/data/template/solution/weather-application/index-style-list.html"
+                },
+                {
+                    "title": "Step 4 - style city",
+                    "url": "resource/data/template/solution/weather-application/index-style-city.html"
+                },
+                {
+                    "title": "Step 5 - ajax",
+                    "url": "resource/data/template/solution/weather-application/index-ajax.html"
+                }
+            ]
+        }
+    ]
+}
