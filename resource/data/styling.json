@@ -1,14 +1,22 @@
 {
-    "title": "Styling HTML",
+    "title": "Styling - Manipulate CSS",
     "sections": [
         {
             "title": "Exercises",
             "steps": [
+                {
+                    "title": "Checking for a CSS class",
+                    "url": "resource/data/template/exercise/styling/check-for-css-class.html"
+                }
             ]
         },
         {
             "title": "Solutions",
             "steps": [
+                {
+                    "title": "Checking for a CSS class",
+                    "url": "resource/data/template/solution/styling/check-for-css-class.html"
+                }
             ]
         }
     ]
