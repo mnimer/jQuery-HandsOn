@@ -1,0 +1,62 @@
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <style>
+
+        /* Example Styles */
+        body {
+            position: relative;
+        }
+        .paragraph-style {
+            background-color: #149B0E;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            padding: 10px 10px 8px 10px;
+            margin: 20px 10px;
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        .check-container {
+            margin-top: 50px;
+            border-top: solid 1px #CCCCCC;
+            padding: 20px;
+        }
+
+        .check-container > p {
+            text-align: left;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+    <body>
+
+        <!--Example Paragraph-->
+        <p id="myParagraph" class="paragraph-style">Just try to get my styles...</p>
+        <!--End Example Paragraph-->
+
+        <!--Paragraph style checks-->
+        <div class="check-container">
+            <p id="paragraphColor">The background color is:  </p>
+            <p id="paragraphFontSize">The font size is:  </p>
+        </div>
+
+        <script>
+
+            // My Styles Check
+            $( "#paragraphColor" ).append( $( "#myParagraph" ).css( "background-color" ).toString() );
+            $( "#paragraphFontSize" ).append( $( "#myParagraph" ).css( "font-size"  ).toString() );
+
+        </script>
+        <!--End Paragraph style checks-->
+
+    </body>
+
+</html>
