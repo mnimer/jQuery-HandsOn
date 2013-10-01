@@ -11,6 +11,10 @@
                 {
                     "title": "Adding a CSS class",
                     "url": "resource/data/template/exercise/styling/add-a-css-class.html"
+                },
+                {
+                    "title": "Removing a CSS class",
+                    "url": "resource/data/template/exercise/styling/remove-a-css-class.html"
                 }
             ]
         },
@@ -24,6 +28,10 @@
                 {
                     "title": "Adding a CSS class",
                     "url": "resource/data/template/solution/styling/add-a-css-class.html"
+                },
+                {
+                    "title": "Removing a CSS class",
+                    "url": "resource/data/template/solution/styling/remove-a-css-class.html"
                 }
             ]
         }
