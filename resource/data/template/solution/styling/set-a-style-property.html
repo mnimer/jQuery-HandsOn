@@ -1,0 +1,63 @@
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <style>
+
+        /* Example Styles */
+        body {
+            position: relative;
+        }
+
+        .paragraph-style {
+            background-color: #CCCCCC;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            padding: 10px 10px 8px 10px;
+            margin: 20px 10px;
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        </style>
+
+    <body>
+
+        <!--Example Paragraph-->
+        <p id="myParagraphOne" class="paragraph-style">My colors have been set</p>
+        <p id="myParagraphTwo" class="paragraph-style">Mouse me!</p>
+        <!--End Example Paragraph-->
+
+        <!--Paragraph style changes-->
+        <script>
+
+            // Set colors on "myParagraphOne"
+            $( "#myParagraphOne" ).css( "color", "#FFFFFF" );
+            $( "#myParagraphOne" ).css( "background-color", "#149B0E" );
+
+            // Set colors on "myParagraphOne" on "click"
+            var paragraphChanged = false;
+            $( "#myParagraphTwo" ).on("click", function() {
+
+                paragraphChanged = !paragraphChanged;
+
+                if( paragraphChanged ) {
+                    $( "#myParagraphTwo" ).css( "color", "#FFFFFF" );
+                    $( "#myParagraphTwo" ).css( "background-color", "#149B0E" );
+                } else {
+                    $( "#myParagraphTwo" ).css( "color", "#333333" );
+                    $( "#myParagraphTwo" ).css( "background-color", "#CCCCCC" );
+                }
+            });
+
+
+        </script>
+        <!--End Paragraph style changes-->
+
+    </body>
+
+</html>

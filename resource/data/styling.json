@@ -19,6 +19,10 @@
                 {
                     "title": "Get a CSS style property",
                     "url": "resource/data/template/exercise/styling/get-a-style-property.html"
+                },
+                {
+                    "title": "Set a CSS style property",
+                    "url": "resource/data/template/exercise/styling/set-a-style-property.html"
                 }
             ]
         },
@@ -40,6 +44,10 @@
                 {
                     "title": "Get a CSS style property",
                     "url": "resource/data/template/solution/styling/get-a-style-property.html"
+                },
+                {
+                    "title": "Set a CSS style property",
+                    "url": "resource/data/template/solution/styling/set-a-style-property.html"
                 }
             ]
         }
