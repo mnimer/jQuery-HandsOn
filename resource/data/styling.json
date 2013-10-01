@@ -7,6 +7,10 @@
                 {
                     "title": "Checking for a CSS class",
                     "url": "resource/data/template/exercise/styling/check-for-css-class.html"
+                },
+                {
+                    "title": "Adding a CSS class",
+                    "url": "resource/data/template/exercise/styling/add-a-css-class.html"
                 }
             ]
         },
@@ -16,6 +20,10 @@
                 {
                     "title": "Checking for a CSS class",
                     "url": "resource/data/template/solution/styling/check-for-css-class.html"
+                },
+                {
+                    "title": "Adding a CSS class",
+                    "url": "resource/data/template/solution/styling/add-a-css-class.html"
                 }
             ]
         }

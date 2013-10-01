@@ -1,0 +1,76 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <style>
+
+        /* Example Styles */
+        body {
+            padding-top: 40px;
+        }
+
+        .my-list-container {
+
+        }
+
+        /* Styles To Add */
+        .add-style-list {
+            list-style: none;
+            border: solid 1px #CCCCCC;
+            background-color: #EFEFEF;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            padding: 0px 15px;
+        }
+
+        .add-style-list-items {
+            background-color: #149B0E;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            padding: 10px 10px 8px 10px;
+            margin: 20px 0px;
+        }
+
+        .add-style-children {
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+    </style>
+
+    <body>
+
+        <!--List Example-->
+        <div id="myListContainer">
+            <ul id="myList">
+                <li>Dieter Rams</li>
+                <li>Jonathan Ive</li>
+                <li>Naoto Fukasawa</li>
+            </ul>
+        </div>
+        <!--End List Example-->
+
+        <!--List style changes-->
+        <script>
+
+            // Add List Style
+            $( "#myList" ).addClass( "add-style-list" );
+
+            // Add List Item Style
+            $( "ul li" ).each( function(){
+                $(this).addClass( 'add-style-list-items' );
+            });
+
+            // Add Style to Children
+            $( "#myList" ).children().addClass( 'add-style-children' );
+
+        </script>
+        <!--End List style changes-->
+
+    </body>
+
+</html>
