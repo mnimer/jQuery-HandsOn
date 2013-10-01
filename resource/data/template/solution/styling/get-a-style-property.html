@@ -11,6 +11,13 @@
         body {
             position: relative;
         }
+
+        hr {
+            height: 1px;
+            border: none;
+            background-color: #CCCCCC;
+        }
+
         .paragraph-style {
             background-color: #149B0E;
             -webkit-border-radius: 4px;
@@ -46,6 +53,7 @@
         <div class="check-container">
             <p id="paragraphColor">The background color is:  </p>
             <p id="paragraphFontSize">The font size is:  </p>
+            <p id="paragraphFontFamily">The font family is:  </p>
         </div>
 
         <script>
@@ -53,6 +61,8 @@
             // My Styles Check
             $( "#paragraphColor" ).append( $( "#myParagraph" ).css( "background-color" ).toString() );
             $( "#paragraphFontSize" ).append( $( "#myParagraph" ).css( "font-size"  ).toString() );
+            $( "#paragraphFontFamily" ).append( $( "#myParagraph" ).css( "font-family"  ).toString() );
+
 
         </script>
         <!--End Paragraph style checks-->
