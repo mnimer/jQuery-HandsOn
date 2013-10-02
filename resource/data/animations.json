@@ -1,5 +1,5 @@
 {
-    "title": "Animations",
+    "title": "Effects & Animations",
     "sections": [
         {
             "title": "Exercises",
@@ -7,6 +7,10 @@
                 {
                     "title": "Create a Custom Animation",
                     "url": "resource/data/template/exercise/animations/custom-animations.html"
+                },
+                {
+                    "title": "Adding an Animaton Delay",
+                    "url": "resource/data/template/exercise/animations/animation-delay.html"
                 }
             ]
         },
@@ -16,6 +20,10 @@
                 {
                     "title": "Create a Custom Animation",
                     "url": "resource/data/template/solution/animations/custom-animations.html"
+                },
+                {
+                    "title": "Adding an Animaton Delay",
+                    "url": "resource/data/template/solution/animations/animation-delay.html"
                 }
             ]
         }

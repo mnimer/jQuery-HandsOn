@@ -1,0 +1,61 @@
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <style>
+
+        /* Example Styles */
+        body {
+            padding: 30px;
+        }
+
+        .animation-button {
+            width: 200px;
+            padding: 10px 0px 8px 0px;
+            margin: 0px auto;
+            background-color: #149B0E;
+            color: #FFFFFF;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            text-align: center;
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .animation-block {
+            background-color: #CCCCCC;
+            border: solid 1px #999999;
+            width: 120px;
+            height: 120px;
+            margin: 100px auto 0px auto;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+    </style>
+
+    <body>
+
+        <!--Exercise Elements-->
+        <div id="startAnimation" class="animation-button">Start Animation</div>
+
+        <div id="animationBlock" class="animation-block"></div>
+        <!--End Exercise Elements-->
+
+        <script>
+
+            $( "#startAnimation" ).click(function() {
+                $( "#animationBlock" ).animate({ "height": "30px" }, "easeOutCubic")
+                        .delay( 250 )
+                        .animate({ "height": "120px" }, "easeOutCubic");
+            });
+
+        </script>
+
+    </body>
+
+</html>
