@@ -1,0 +1,119 @@
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+    <style>
+
+        /* Example Styles */
+        body {
+            padding: 30px;
+        }
+
+        .move-controls-row {
+            width: 270px;
+            margin: 0px auto;
+        }
+
+        .move-controls {
+            display: table-row;;
+        }
+
+        .move-button {
+            display: table-cell;
+            width: 120px;
+            padding: 10px 0px 8px 0px;
+            margin: 0px 10px;
+            background-color: #149B0E;
+            color: #FFFFFF;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            text-align: center;
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .move-top {
+            width: 120px;
+            padding: 10px 0px 8px 0px;
+            margin: 0px auto 10px auto;
+            background-color: #149B0E;
+            color: #FFFFFF;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            text-align: center;
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .move-bottom {
+            width: 120px;
+            padding: 10px 0px 8px 0px;
+            margin: 10px auto 0px auto;
+            background-color: #149B0E;
+            color: #FFFFFF;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            text-align: center;
+            font-family: "Avenir LT 65 Medium" , "Avenir-Medium", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .move-block {
+            position: absolute;
+            background-color: #CCCCCC;
+            border: solid 1px #999999;
+            left: 30px;
+            top: 200px;
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+    </style>
+
+    <body>
+
+        <!--Exercise Elements-->
+        <div id="moveUp" class="move-top">Move Up</div>
+        <div class="move-controls-row">
+            <div class="move-controls">
+                <div id="moveLeft" class="move-button">Move Left</div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div id="moveRight"  class="move-button">Move Right</div>
+            </div>
+        </div>
+        <div id="moveDown" class="move-bottom">Move Down</div>
+
+        <div id="moveBlock" class="move-block"></div>
+        <!--End Exercise Elements-->
+
+        <script>
+
+            $( "#moveUp" ).click(function() {
+                $( "#moveBlock" ).animate({ "top": "-=60px" }, "easeOutCubic" );
+            });
+
+            $( "#moveLeft" ).click(function() {
+                $( "#moveBlock" ).animate({ "left": "-=60px" }, "easeOutCubic" );
+            });
+
+            $( "#moveRight" ).click(function(){
+                $( "#moveBlock" ).animate({ "left": "+=60px" }, "easeOutCubic" );
+            });
+
+            $( "#moveDown" ).click(function() {
+                $( "#moveBlock" ).animate({ "top": "+=60px" }, "easeOutCubic" );
+            });
+
+        </script>
+
+    </body>
+
+</html>

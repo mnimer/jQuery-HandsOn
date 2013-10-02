@@ -4,11 +4,19 @@
         {
             "title": "Exercises",
             "steps": [
+                {
+                    "title": "Create a Custom Animation",
+                    "url": "resource/data/template/exercise/animations/custom-animations.html"
+                }
             ]
         },
         {
             "title": "Solutions",
             "steps": [
+                {
+                    "title": "Create a Custom Animation",
+                    "url": "resource/data/template/solution/animations/custom-animations.html"
+                }
             ]
         }
     ]
