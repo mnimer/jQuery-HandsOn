@@ -122,6 +122,15 @@ body:after {
     padding: 10px 25px 8px 25px;
 }
 
+.reveal div.example > .example-row > .example-type > .list-bullet {
+    background-color: #149B0E !important;
+    margin-right: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+}
+
 .reveal > div.example > div.example-row > div.example-row p {
     display: table-cell;
 }
@@ -142,6 +151,10 @@ body:after {
     padding: 20px 0px;
 }
 
+.reveal p.example-code-small {
+    font-size: 22px !important;
+}
+
 .reveal p.example-code > .light {
     color: #999999;
 }
@@ -149,6 +162,10 @@ body:after {
 .reveal p.example-code span.highlight {
     color: #149B0E !important;
     font-weight: bold;
+}
+
+.reveal p.example-code > .indent {
+    padding-left: 40px;
 }
 
 

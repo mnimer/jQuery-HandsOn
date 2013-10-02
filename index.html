@@ -639,15 +639,13 @@ request.done( function(data)
 
                 <section id="jqueryUI">
                     <img width="816" height="209" src="resource/image/jQueryUI.png" alt="jQuery Mobile">
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>Style HTML</li>
-                                <li>ThemeRoller</li>
-                                <li>Effects</li>
-                                <li>Custom Animations</li>
-                            </ul>
-                        </div>
+                    <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                        <ul>
+                            <li>Style HTML</li>
+                            <li>ThemeRoller</li>
+                            <li>Effects</li>
+                            <li>Custom Animations</li>
+                        </ul>
                     </div>
                 </section>
 
@@ -658,138 +656,126 @@ request.done( function(data)
                 <section>
                     <section>
                         <h2>Styling - Manipulate CSS</h2>
-                        <div style="display: inline-table; width: 816px; height: 418px">
-                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                                <ul>
-                                    <li>Check for a CSS class</li>
-                                    <li>Adding a CSS class</li>
-                                    <li>Removing a CSS class</li>
-                                    <li>Get a style property</li>
-                                    <li>Set a style property</li>
-                                    <a href="http://api.jquery.com/category/css/" target="_blank">CSS Documentation</a>
-                                </ul>
-                            </div>
+                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                            <ul>
+                                <li>Check for a CSS class</li>
+                                <li>Adding a CSS class</li>
+                                <li>Removing a CSS class</li>
+                                <li>Get a style property</li>
+                                <li>Set a style property</li>
+                                <a href="http://api.jquery.com/category/css/" target="_blank">CSS Documentation</a>
+                            </ul>
                         </div>
                     </section>
                     <section>
                         <h2>Checking for CSS classes</h2>
-                        <div style="width: 100%; height: 418px">
-                            <div style="width: 100%; height: 418px;">
-                                <h5>.hasClass( "className" )</h5>
-                                <p class="example-description">Determine whether any of the matched elements are assigned the given class.</p>
-                                <div class="example">
-                                    <div class="example-row">
-                                        <div class="example-type"><p>CSS</p></div>
-                                        <p class="example-code"><span class="highlight">.myDivClass {</span> </br><span class="light">&nbsp;&nbsp;&nbsp;&nbsp;style...</br></span> <span class="highlight">}</span></p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>HTML</p></div>
-                                        <p class="example-code">&lt;div id="myDiv" class="<span class="highlight">myDivClass</span>"&gt;&lt;/div&gt;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Check</p></div>
-                                        <p class="example-code">$( "#myDiv" ).<span class="highlight">hasClass( "myDivClass" )</span></p>
-                                    </div>
+                        <div style="width: 100%; height: 418px;">
+                            <h5>.hasClass( "className" )</h5>
+                            <p class="example-description">Determine whether any of the matched elements are assigned the given class.</p>
+                            <div class="example">
+                                <div class="example-row">
+                                    <div class="example-type"><p>CSS</p></div>
+                                    <p class="example-code"><span class="highlight">.myDivClass {</span> </br><span class="light">&nbsp;&nbsp;&nbsp;&nbsp;style...</br></span> <span class="highlight">}</span></p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>HTML</p></div>
+                                    <p class="example-code">&lt;div id="myDiv" class="<span class="highlight">myDivClass</span>"&gt;&lt;/div&gt;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Check</p></div>
+                                    <p class="example-code">$( "#myDiv" ).<span class="highlight">hasClass( "myDivClass" )</span></p>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section>
                         <h2>Adding a CSS class to an element</h2>
-                        <div style="width: 100%; height: 418px">
-                            <div style="width: 100%; height: 418px;">
-                                <h5>.addClass( "className" )</h5>
-                                <p class="example-description">Adds the specified class(es) to each of the set of matched elements.</p>
-                                <div class="example">
-                                    <div class="example-row">
-                                        <div class="example-type"><p>HTML</p></div>
-                                        <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>"&gt;&lt;/div&gt;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Add Class</p></div>
-                                        <p class="example-code">$( "#myDiv" ).<span class="highlight">addClass( "myDivClass" )</span>;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>List Items</p></div>
-                                        <p class="example-code">$( "ul li" ).each( function(){
-                                            </br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;$(this).<span class="highlight">addClass( 'myDivClass' )</span>;
-                                            </br>
-                                            });</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Children</p></div>
-                                        <p class="example-code">$( "#myDiv" ).children().<span class="highlight">addClass( 'myDivClass' )</span>;</p>
-                                    </div>
+                        <div style="width: 100%; height: 418px;">
+                            <h5>.addClass( "className" )</h5>
+                            <p class="example-description">Adds the specified class(es) to each of the set of matched elements.</p>
+                            <div class="example">
+                                <div class="example-row">
+                                    <div class="example-type"><p>HTML</p></div>
+                                    <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>"&gt;&lt;/div&gt;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Add Class</p></div>
+                                    <p class="example-code">$( "#myDiv" ).<span class="highlight">addClass( "myDivClass" )</span>;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>List Items</p></div>
+                                    <p class="example-code">$( "ul li" ).each( function(){
+                                        </br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;$(this).<span class="highlight">addClass( 'myDivClass' )</span>;
+                                        </br>
+                                        });</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Children</p></div>
+                                    <p class="example-code">$( "#myDiv" ).children().<span class="highlight">addClass( 'myDivClass' )</span>;</p>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section>
                         <h2>Removing a CSS class</h2>
-                        <div style="width: 100%; height: 418px">
-                            <div style="width: 100%; height: 418px;">
-                                <h5>.removeClass( "className" )</h5>
-                                <p class="example-description">Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</p>
-                                <div class="example">
-                                    <div class="example-row">
-                                        <div class="example-type"><p>HTML</p></div>
-                                        <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>" class="<span class="highlight">myDivClass</span>"&gt;&lt;/div&gt;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Remove</p></div>
-                                        <p class="example-code">$( #myDiv ).<span class="highlight">removeClass( "myDivClass" )</span>;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Add</p></div>
-                                        <p class="example-code">$( #myDiv ).<span class="highlight">removeClass( "class" )</span>.<span class="highlight">addClass( 'newClass' );</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Children</p></div>
-                                        <p class="example-code">$( #myDiv ).children().<span class="highlight">removeClass( 'myDivClass' )</span>;</p>
-                                    </div>
+                        <div style="width: 100%; height: 418px;">
+                            <h5>.removeClass( "className" )</h5>
+                            <p class="example-description">Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</p>
+                            <div class="example">
+                                <div class="example-row">
+                                    <div class="example-type"><p>HTML</p></div>
+                                    <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>" class="<span class="highlight">myDivClass</span>"&gt;&lt;/div&gt;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Remove</p></div>
+                                    <p class="example-code">$( #myDiv ).<span class="highlight">removeClass( "myDivClass" )</span>;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Add</p></div>
+                                    <p class="example-code">$( #myDiv ).<span class="highlight">removeClass( "class" )</span>.<span class="highlight">addClass( 'newClass' );</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Children</p></div>
+                                    <p class="example-code">$( #myDiv ).children().<span class="highlight">removeClass( 'myDivClass' )</span>;</p>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section>
                         <h2>Getting a style property</h2>
-                        <div style="width: 100%; height: 418px">
-                            <div style="width: 100%; height: 418px;">
-                                <h5>.css( "propertyName" )</h5>
-                                <p class="example-description">Get the value of style properties for the first element in the set of matched elements.</p>
-                                <div class="example">
-                                    <div class="example-row">
-                                        <div class="example-type"><p>HTML</p></div>
-                                        <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>" style="<span class="highlight">color: #333333;</span>"&gt;&lt;/div&gt;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Exmple</p></div>
-                                        <p class="example-code">var colorStyle = $( #myDiv ).<span class="highlight">css( "color" )</span>;</p>
-                                    </div>
+                        <div style="width: 100%; height: 418px;">
+                            <h5>.css( "propertyName" )</h5>
+                            <p class="example-description">Get the value of style properties for the first element in the set of matched elements.</p>
+                            <div class="example">
+                                <div class="example-row">
+                                    <div class="example-type"><p>HTML</p></div>
+                                    <p class="example-code">&lt;div id="<span class="highlight">myDiv</span>" style="<span class="highlight">color: #333333;</span>"&gt;&lt;/div&gt;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Example</p></div>
+                                    <p class="example-code">var colorStyle = $( #myDiv ).<span class="highlight">css( "color" )</span>;</p>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section>
                         <h2>Setting a style property</h2>
-                        <div style="width: 100%; height: 418px">
                             <div style="width: 100%; height: 418px;">
-                                <h5>.css( "propertyName", "value" )</h5>
-                                <p class="example-description">Set one or more CSS properties for the set of matched elements.</p>
-                                <div class="example">
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Set</p></div>
-                                        <p class="example-code">$( #myDiv ).<span class="highlight">css( "color", "#FF0000" )</span>;</p>
-                                    </div>
-                                    <div class="example-row">
-                                        <div class="example-type"><p>Mouse</p></div>
-                                        <p class="example-code">$( #myDiv ).on( "mouseenter", function() {
-                                            </br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;$( this ).<span class="highlight">css( { "color": "red", "font-weight": "bold" })</span>;
-                                            </br>
-                                            })</p>
-                                    </div>
+                            <h5>.css( "propertyName", "value" )</h5>
+                            <p class="example-description">Set one or more CSS properties for the set of matched elements.</p>
+                            <div class="example">
+                                <div class="example-row">
+                                    <div class="example-type"><p>Set</p></div>
+                                    <p class="example-code">$( #myDiv ).<span class="highlight">css( "color", "#FF0000" )</span>;</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p>Mouse</p></div>
+                                    <p class="example-code">$( #myDiv ).on( "mouseenter", function() {
+                                        </br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;$( this ).<span class="highlight">css( { "color": "red", "font-weight": "bold" })</span>;
+                                        </br>
+                                        })</p>
                                 </div>
                             </div>
                         </div>
@@ -802,17 +788,81 @@ request.done( function(data)
                     * ThemeRoller
                     **************************************************** -->
                 <section>
-                    <h2>Styling - ThemeRoller</h2>
-                    <div style="display: inline-table; width: 816px; height: 418px">
-                        <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
-                            <ul>
-                                <li>TBD Item 1</li>
-                                <li>TBD Item 2</li>
-                            </ul>
+                    <section>
+                        <h2>Styling - ThemeRoller</h2>
+                        <div style="display: inline-table; width: 816px; height: 418px">
+                            <div style="display: table-cell; width: 800px; height: 418px; vertical-align: middle;">
+                                <ul>
+                                    <li>Theme Roller</li>
+                                    <li><a href="http://jquerymobile.com/themeroller/index.php" target="_blank">Theme Roller Site</a></li>
+                                    <li>Using Your Theme</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <section>
+                        <h2>Introduction to ThemeRoller</h2>
+                        <div style="width: 100%; height: 418px;">
+                            <h5>The ThemeRoller Mobile tool makes it easy to create custom-designed themes for your mobile site or app.</h5>
+                            </br>
+                            <div class="example">
+                                <div class="example-row">
+                                    <div class="example-type"><p class="list-bullet">&nbsp;</p></div>
+                                    <p class="example-description">Global settings for your theme</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p class="list-bullet">&nbsp;</p></div>
+                                    <p class="example-description">Themes can be downloaded or shared with a link</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p class="list-bullet">&nbsp;</p></div>
+                                    <p class="example-description">Easy to implement</p>
+                                </div>
+                                <div class="example-row">
+                                    <div class="example-type"><p class="list-bullet">&nbsp;</p></div>
+                                    <p class="example-description">Supports most browsers ( IE is not as freindly )</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Playing with ThemeRoller</h2>
+                        <div style="width: 100%; height: 418px;">
+                            <h5><a href="http://jquerymobile.com/themeroller/index.php" target="_blank">Theme Roller Site</a></h5>
+                            </br>
+                            <div class="example">
+                                <p class="example-description">Click the link above and start exploring.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Using your theme</h2>
+                        <div style="width: 100%; height: 418px;">
+                            <h5>&lt;link rel="stylesheet" href="css/my-custom-theme.css" /&gt;</h5>
+                            </br>
+                            <!--<div class="example-row">-->
+                                <!--<div class="example-type"><p>Example</p></div>-->
+                            <div class="example">
+                                <p class="example-code example-code-small">&lt;head&gt;
+                                    </br>
+                                    </br><span class="indent">&lt;title&gt;jQuery Mobile page&lt;/title&gt;</span>
+                                    </br><span class="indent">&lt;meta charset="utf-8" /&gt;</span>
+                                    </br><span class="indent">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</span>
+                                    </br><span class="indent"><span class="highlight">&lt;link rel="stylesheet" href="css/my-custom-theme.css" /&gt;</span></span>
+                                    </br><span class="indent">&lt;link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.</span>
+                                    </br><span class="indent">&nbsp;&nbsp;&nbsp;structure-1.3.2.min.css" /&gt;</span>
+                                    </br><span class="indent">&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;</span>
+                                    </br><span class="indent">&lt;script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"&gt;</span>
+                                    </br><span class="indent">&nbsp;&nbsp;&nbsp;&lt;/script&gt;</span>
+                                    </br>
+                                </br>&lt;/head&gt;</p>
+                            </div>
+                                <!--<p class="example-code">var colorStyle = $( #myDiv ).<span class="highlight">css( "color" )</span>;</p>-->
+                            <!--</div>-->
+                        </div>
+                    </section>
                 </section>
-                <section class="editor" data-source="resource/data/styling.json"></section>
+                <!--<section class="editor" data-source="resource/data/styling.json"></section>-->
 
 
 
