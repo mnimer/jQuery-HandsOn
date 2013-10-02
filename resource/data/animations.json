@@ -9,8 +9,12 @@
                     "url": "resource/data/template/exercise/animations/custom-animations.html"
                 },
                 {
-                    "title": "Adding an Animaton Delay",
+                    "title": "Adding an Animation Delay",
                     "url": "resource/data/template/exercise/animations/animation-delay.html"
+                },
+                {
+                    "title": "Applying Fades",
+                    "url": "resource/data/template/exercise/animations/applying-fades.html"
                 }
             ]
         },
@@ -22,8 +26,12 @@
                     "url": "resource/data/template/solution/animations/custom-animations.html"
                 },
                 {
-                    "title": "Adding an Animaton Delay",
+                    "title": "Adding an Animation Delay",
                     "url": "resource/data/template/solution/animations/animation-delay.html"
+                },
+                {
+                    "title": "Applying Fades",
+                    "url": "resource/data/template/solution/animations/applying-fades.html"
                 }
             ]
         }
