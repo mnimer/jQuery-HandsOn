@@ -15,6 +15,10 @@
                 {
                     "title": "Applying Fades",
                     "url": "resource/data/template/exercise/animations/applying-fades.html"
+                },
+                {
+                    "title": "Hiding and Showing",
+                    "url": "resource/data/template/exercise/animations/hide-show.html"
                 }
             ]
         },
@@ -32,6 +36,10 @@
                 {
                     "title": "Applying Fades",
                     "url": "resource/data/template/solution/animations/applying-fades.html"
+                },
+                {
+                    "title": "Hiding and Showing",
+                    "url": "resource/data/template/solution/animations/hide-show.html"
                 }
             ]
         }

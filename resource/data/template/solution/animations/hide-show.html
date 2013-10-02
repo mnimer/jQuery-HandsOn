@@ -31,7 +31,7 @@
             border: solid 1px #999999;
             width: 120px;
             height: 120px;
-            margin: 70px auto 0px auto;
+            margin: 90px auto 0px auto;
             -webkit-border-radius: 6px;
             border-radius: 6px;
         }
@@ -41,29 +41,26 @@
     <body>
 
         <!--Exercise Elements-->
-        <div id="fadeInButton" class="animation-button">Fade In</div>
-        <div id="fadeOutButton" class="animation-button">Fade Out</div>
-        <div id="fadeToButton" class="animation-button">Fade To</div>
-        <div id="fadeToggleButton" class="animation-button">Fade Toggle</div>
+        <div id="hideButton" class="animation-button">Hide</div>
+        <div id="showButton" class="animation-button">Show</div>
+        <div id="toggleButton" class="animation-button">Toggle</div>
 
         <div id="animationBlock" class="animation-block"></div>
         <!--End Exercise Elements-->
 
         <script>
 
-    //
-    // TODO: Add Fades
-    //
-    // 1. Add a click event to "fadeInButton" that will "fadeIn" the "animationBlock" element.
-    //
-    //  Example: $( "#elementID" ).click(function() {
-    //                $( "#elementID" ).fadeIn( fadeDuration );
-    //            });
-    //
-    // 2. Add click events to the remaining three action elements, "fadeOutButton", "fadeToButton",
-    //    and "fadeToggleButton", that implement the "fadeOut", "fadeTo", and "fadeToggle" methods.
-    //    Give each fade a duration.
-    //
+            $( "#hideButton" ).click(function() {
+                $( "#animationBlock" ).hide( 250 );
+            });
+
+            $( "#showButton" ).click(function() {
+                $( "#animationBlock" ).show( 250 );
+            });
+
+            $( "#toggleButton" ).click(function() {
+                $( "#animationBlock" ).toggle( 250 );
+            });
 
         </script>
 
