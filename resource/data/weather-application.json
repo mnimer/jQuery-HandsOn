@@ -48,6 +48,10 @@
                 {
                     "title": "Step 5 - ajax",
                     "url": "resource/data/template/solution/weather-application/index-ajax.html"
+                },
+                {
+                    "title": "Extra Credit - Templates",
+                    "url": "resource/data/template/solution/weather-application/index-templates.html"
                 }
             ]
         }

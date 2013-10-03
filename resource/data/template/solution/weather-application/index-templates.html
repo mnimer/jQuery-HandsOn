@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+
 
 
 <style type="text/css">
@@ -242,15 +244,86 @@ body {
 
 
 <script type="application/javascript">
+
+    //Define Cities
+    var cityList = { city: [
+        {"id": "5128581", "name": "New York", "link": "city-newyork"},
+        {"id": "4994358", "name": "Grand Rapids", "link": "city-grandrapids"},
+        {"id": "5391959", "name": "San Francisco", "link": "city-sanfrancisco"},
+        {"id": "4887398", "name": "Chicago", "link": "city-chicago"},
+        {"id": "4164138", "name": "Miami", "link": "city-miami"},
+        {"id": "4930956", "name": "Boston", "link": "city-boston"}
+    ]
+    };
+
+    var indicators = ["&#9675;", "&#9675;", "&#9675;", "&#9675;", "&#9675;", "&#9675;", "&#9675;"];
+
+
     $(document).bind('ready', function ()
     {
+        // render list templates
+        renderCityList();
+        renderSingleCities();
+
         //NAVIGATION STEP
         $(document).on("swiperight", function (event) { swipeRight(event); });
         $(document).on("swipeleft", function (event) { swipeLeft(event); });
 
         //AJAX STEP
         loadWeatherData();
+
     });
+
+
+    /**
+     * use the template to render each city cell in the location list page
+     **/
+    var renderCityList = function()
+    {
+        var parent = $("#cityList");
+        var source   = $("#cityListItem").html();
+        var template = Handlebars.compile(source);
+        for (var i = 0; i < cityList.city.length; i++)
+        {
+            var o = cityList.city[i];
+            var html    = template(o);
+            parent.append(html);
+        }
+    }
+
+    /**
+     * use the template to render each city cell in the location list page
+     **/
+    var renderSingleCities = function()
+    {
+        var parent = $("body");
+        var source   = $("#cityItem").html();
+        var template = Handlebars.compile(source);
+        for (var i = 0; i < cityList.city.length; i++)
+        {
+            var o = cityList.city[i];
+            // calculate prev page
+            if( i > 0 )
+            {
+                var prev = cityList.city[i-1]
+                o.prevLink = prev.link;
+            }
+            // calculate next page
+            if( i+1 < cityList.city.length)
+            {
+                var next = cityList.city[i+1];
+                o.nextLink = next.link;
+            }
+
+            // replace active page icon
+            var tmpIndicator = indicators.slice(0);
+            tmpIndicator[i] = "&#9679;";
+            o.indicators = new Handlebars.SafeString(tmpIndicator.join(" "));
+
+            var html    = template(o);
+            parent.append(html);
+        }
+    }
 
 
 
@@ -283,10 +356,9 @@ body {
     function loadWeatherData()
     {
         // select cityId
-        var list = $(".cityList").find("div[data-cityid]");
-        for (var i = 0; i < list.length; i++)
+        for (var i = 0; i < cityList.city.length; i++)
         {
-            var cityId = $(list[i]).attr("data-cityid");
+            var cityId = cityList.city[i].id;
             loadWeather(cityId);
         }
     }
@@ -361,6 +433,50 @@ body {
     }
 
 </script>
+
+<script id="cityListItem" type="text/x-handlebars-template">
+    <div class="city temp0"
+         data-cityid="{{ id }}"
+         onclick="$.mobile.navigate('#{{ link }}')">
+        <div class="cityHeader">
+            <img src="/resource/image/icon-corner-plus.png">
+        </div>
+        <div class="name">{{ name }}</div>
+        <div class="status"></div>
+        <div class="temp">0&#176;</div>
+    </div>
+</script>
+
+
+<script id="cityItem" type="text/x-handlebars-template">
+    <div id="{{ link }}" data-role="page"
+         data-cityid="{{ id }}"
+         data-prev="{{ prevLink }}" data-next="{{ nextLink }}"
+         class="city-page ">
+        <div data-role="content" class="city temp0">
+            <div class="name">{{ name }}</div>
+            <div class="icon">
+                <img src="/resource/image/Cloud.png"/>
+            </div>
+            <div class="status"></div>
+            <div class="temp">
+                <span class="high">0&#176;</span>
+                <span class="divider">/</span>
+                <span class="low">0&#176;</span>
+            </div>
+            <div class="humidity">
+                <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
+            <a href="#locations" class="locationListBtn" width="23" height="18" >
+                <img src="/resource/image/icon-footer-locationlist.png"/></a>
+            <span class="indicators">{{ indicators }}</span>
+        </div>
+    </div>
+</script>
+
+
 </head>
 <body>
 
@@ -371,263 +487,18 @@ body {
         <h1>Locations</h1>
     </div>
 
-
     <!--
     **** STYLE LIST STEP
     -->
     <div data-role="content">
-        <!-- todo conver to floating divs -->
-        <div class="cityList" DIS>
-            <!-- New York -->
-            <div class="city temp0"
-                 data-cityid="5128581"
-                 onclick="$.mobile.navigate('#city-newyork')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
-                </div>
-                <div class="name">New York</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!-- Grand Rapids-->
-            <div class="city temp0"
-                 data-cityid="4994358"
-                 onclick="$.mobile.navigate('#city-grandrapids')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
-                </div>
-                <div class="name">Grand Rapids</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--San Francisco-->
-            <div class="city temp0"
-                 data-cityid="5391959"
-                 onclick="$.mobile.navigate('#city-sanfrancisco')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
-                </div>
-                <div class="name">San Francisco</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--Chicago-->
-            <div class="city temp0"
-                 data-cityid="4887398"
-                 onclick="$.mobile.navigate('#city-chicago')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
-                </div>
-                <div class="name">Chicago</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--Miami-->
-            <div class="city temp0"
-                 data-cityid="4164138"
-                 onclick="$.mobile.navigate('#city-miami')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
-                </div>
-                <div class="name">Miami</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--Boston-->
-            <div class="city temp0"
-                 data-cityid="4930956"
-                 onclick="$.mobile.navigate('#city-boston')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
-                </div>
-                <div class="name">Boston</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-        </div>
+        <div id="cityList" class="cityList" ></div>
     </div>
 </div>
 
 
 <!--
     **** STYLE CITY STEP
-    -->t
-<div id="city-newyork" data-role="page"
-     data-cityid="5128581"
-     data-prev="locations" data-next="city-grandrapids"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">New York</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9679; &#9675; &#9675; &#9675; &#9675; &#9675; </span>
-    </div>
-</div>
+-->
 
-
-
-<div id="city-grandrapids" data-role="page"
-     data-cityid="4994358"
-     data-prev="city-newyork" data-next="city-sanfrancisco"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Grand Rapids</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9679; &#9675; &#9675; &#9675; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-<div id="city-sanfrancisco" data-role="page"
-     data-cityid="5391959"
-     data-prev="city-grandrapids" data-next="city-chicago"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">San Francisco</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9675; &#9679; &#9675; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-chicago" data-role="page"
-     data-cityid="4887398"
-     data-prev="city-sanfrancisco" data-next="city-miami"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Chicago</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators"> &#9675; &#9675; &#9675; &#9679; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-miami" data-role="page"
-     data-cityid="4164138"
-     data-prev="city-chicago" data-next="city-boston"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Miami</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators"> &#9675; &#9675; &#9675; &#9675; &#9679; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-boston" data-role="page"
-     data-cityid="4930956"
-     data-prev="city-miami" data-next="locations"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Boston</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9675; &#9675; &#9675; &#9675; &#9675; &#9679;</span>
-    </div>
-</div>
 </body>
 </html>

@@ -1,6 +1,14 @@
 {
     "title": "AJAX",
     "sections": [
-
+        {
+            "title": "Exercises",
+            "steps": [
+                {
+                    "title": "Load Weather Data",
+                    "url": "resource/data/template/solution/ajax/loadWeatherData.html"
+                }
+            ]
+        }
     ]
 }
