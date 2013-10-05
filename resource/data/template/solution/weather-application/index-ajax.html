@@ -211,18 +211,25 @@ body {
     top: 4px;
     left: 15px;
     position: absolute;
-    background-color: rgba(0, 0, 0, .35) !important;
-
+    background: none !important;
     border: 0px;
     -webkit-border-radius: 0 !important;
     border-radius: 0 !important;
+    box-shadow: none !important;
 
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .35)), to(rgba(0, 0, 0, .35))) !important;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -ms-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
+    .ui-btn-inner {
+        border: none !important;
+        border-top: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+
+        .ui-btn-text {
+            border: none !important;
+            border-top: none !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+    }
 }
 
 .city-page .ui-footer {
@@ -230,12 +237,12 @@ body {
 
     height: 42px;
     border: 0px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .35)), to(rgba(0, 0, 0, .35))) !important;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -ms-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))) !important;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
 }
 
 </style>
@@ -478,7 +485,8 @@ body {
     </div>
     <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
         <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
+            <img src="/resource/image/icon-footer-locationlist.png"/>
+        </a>
         <span class="indicators">&#9679; &#9675; &#9675; &#9675; &#9675; &#9675; </span>
     </div>
 </div>
