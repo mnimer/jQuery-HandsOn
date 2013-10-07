@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Button Icons</title>
-
+        
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -428,7 +427,7 @@
                     $(".city-page[data-cityid="  +data.id  +"] .temp .low").html( lowTemp +"&#176;" );
                     $(".city-page[data-cityid="  +data.id  +"] .humidity span").html( data.main.humidity +"%" );
                     $(".city-page[data-cityid="  +data.id  +"] .status").html( data.weather[0].description );
-                    $(".city-page[data-cityid="  +data.id  +"] .icon img").attr( "src", "/resource/image/" +data.weather[0].icon +".png" );
+                    $(".city-page[data-cityid="  +data.id  +"] .icon img").attr( "src", "resource/image/" +data.weather[0].icon +".png" );
 
                     updateCss(cityId, temp);
                 });
@@ -491,7 +490,7 @@
                          data-cityid="5128581"
                          onclick="$.mobile.navigate('#city-newyork')">
                         <div class="cityHeader">
-                            <img src="/resource/image/icon-corner-plus.png">
+                            <img src="resource/image/icon-corner-plus.png">
                         </div>
                         <div class="name">New York</div>
                         <div class="status"></div>
@@ -503,7 +502,7 @@
                          data-cityid="4994358"
                          onclick="$.mobile.navigate('#city-grandrapids')">
                         <div class="cityHeader">
-                            <img src="/resource/image/icon-corner-plus.png">
+                            <img src="resource/image/icon-corner-plus.png">
                         </div>
                         <div class="name">Grand Rapids</div>
                         <div class="status"></div>
@@ -515,7 +514,7 @@
                          data-cityid="5391959"
                          onclick="$.mobile.navigate('#city-sanfrancisco')">
                         <div class="cityHeader">
-                            <img src="/resource/image/icon-corner-plus.png">
+                            <img src="resource/image/icon-corner-plus.png">
                         </div>
                         <div class="name">San Francisco</div>
                         <div class="status"></div>
@@ -527,7 +526,7 @@
                          data-cityid="4887398"
                          onclick="$.mobile.navigate('#city-chicago')">
                         <div class="cityHeader">
-                            <img src="/resource/image/icon-corner-plus.png">
+                            <img src="resource/image/icon-corner-plus.png">
                         </div>
                         <div class="name">Chicago</div>
                         <div class="status"></div>
@@ -539,7 +538,7 @@
                          data-cityid="4164138"
                          onclick="$.mobile.navigate('#city-miami')">
                         <div class="cityHeader">
-                            <img src="/resource/image/icon-corner-plus.png">
+                            <img src="resource/image/icon-corner-plus.png">
                         </div>
                         <div class="name">Miami</div>
                         <div class="status"></div>
@@ -551,7 +550,7 @@
                          data-cityid="4930956"
                          onclick="$.mobile.navigate('#city-boston')">
                         <div class="cityHeader">
-                            <img src="/resource/image/icon-corner-plus.png">
+                            <img src="resource/image/icon-corner-plus.png">
                         </div>
                         <div class="name">Boston</div>
                         <div class="status"></div>
@@ -572,7 +571,7 @@
             <div data-role="content" class="city temp0">
                 <div class="name">New York</div>
                 <div class="icon">
-                    <img src="/resource/image/Cloud.png"/>
+                    <img src="resource/image/Cloud.png"/>
                 </div>
                 <div class="status"></div>
                 <div class="temp">
@@ -581,20 +580,20 @@
                     <span class="low">0&#176;</span>
                 </div>
                 <div class="humidity">
-                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                    <img src="resource/image/icon-humidity.png"> <span>0%</span>
                 </div>
             </div>
             <div data-role="footer" data-fullscreen="false" class="temp0">
                 <a href="#locations" class="locationListBtn" width="23" height="18" >
-                    <img src="/resource/image/icon-footer-locationlist.png"/>
+                    <img src="resource/image/icon-footer-locationlist.png"/>
                 </a>
                 <span class="indicators">
-                    <img src="/resource/image/icon-pageindicator-active.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator-active.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
                 </span>
             </div>
         </div>
@@ -608,7 +607,7 @@
             <div data-role="content" class="city temp0">
                 <div class="name">Grand Rapids</div>
                 <div class="icon">
-                    <img src="/resource/image/Cloud.png"/>
+                    <img src="resource/image/Cloud.png"/>
                 </div>
                 <div class="status"></div>
                 <div class="temp">
@@ -617,19 +616,19 @@
                     <span class="low">0&#176;</span>
                 </div>
                 <div class="humidity">
-                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                    <img src="resource/image/icon-humidity.png"> <span>0%</span>
                 </div>
             </div>
             <div data-role="footer" data-fullscreen="false" class="temp0">
                 <a href="#locations" class="locationListBtn" width="23" height="18" >
-                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                    <img src="resource/image/icon-footer-locationlist.png"/></a>
                 <span class="indicators">
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator-active.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator-active.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
                 </span>
             </div>
         </div>
@@ -644,7 +643,7 @@
             <div data-role="content" class="city temp0">
                 <div class="name">San Francisco</div>
                 <div class="icon">
-                    <img src="/resource/image/Cloud.png"/>
+                    <img src="resource/image/Cloud.png"/>
                 </div>
                 <div class="status"></div>
                 <div class="temp">
@@ -653,19 +652,19 @@
                     <span class="low">0&#176;</span>
                 </div>
                 <div class="humidity">
-                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                    <img src="resource/image/icon-humidity.png"> <span>0%</span>
                 </div>
             </div>
             <div data-role="footer" data-fullscreen="false" class="temp0">
                 <a href="#locations" class="locationListBtn" width="23" height="18" >
-                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                    <img src="resource/image/icon-footer-locationlist.png"/></a>
                 <span class="indicators">
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator-active.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator-active.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
                 </span>
             </div>
         </div>
@@ -681,7 +680,7 @@
             <div data-role="content" class="city temp0">
                 <div class="name">Chicago</div>
                 <div class="icon">
-                    <img src="/resource/image/Cloud.png"/>
+                    <img src="resource/image/Cloud.png"/>
                 </div>
                 <div class="status"></div>
                 <div class="temp">
@@ -690,19 +689,19 @@
                     <span class="low">0&#176;</span>
                 </div>
                 <div class="humidity">
-                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                    <img src="resource/image/icon-humidity.png"> <span>0%</span>
                 </div>
             </div>
             <div data-role="footer" data-fullscreen="false" class="temp0">
                 <a href="#locations" class="locationListBtn" width="23" height="18" >
-                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                    <img src="resource/image/icon-footer-locationlist.png"/></a>
                 <span class="indicators">
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator-active.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator-active.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
                 </span>
             </div>
         </div>
@@ -718,7 +717,7 @@
             <div data-role="content" class="city temp0">
                 <div class="name">Miami</div>
                 <div class="icon">
-                    <img src="/resource/image/Cloud.png"/>
+                    <img src="resource/image/Cloud.png"/>
                 </div>
                 <div class="status"></div>
                 <div class="temp">
@@ -727,19 +726,19 @@
                     <span class="low">0&#176;</span>
                 </div>
                 <div class="humidity">
-                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                    <img src="resource/image/icon-humidity.png"> <span>0%</span>
                 </div>
             </div>
             <div data-role="footer" data-fullscreen="false" class="temp0">
                 <a href="#locations" class="locationListBtn" width="23" height="18" >
-                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                    <img src="resource/image/icon-footer-locationlist.png"/></a>
                 <span class="indicators">
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator-active.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator-active.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
                 </span>
             </div>
         </div>
@@ -755,7 +754,7 @@
             <div data-role="content" class="city temp0">
                 <div class="name">Boston</div>
                 <div class="icon">
-                    <img src="/resource/image/Cloud.png"/>
+                    <img src="resource/image/Cloud.png"/>
                 </div>
                 <div class="status"></div>
                 <div class="temp">
@@ -764,19 +763,19 @@
                     <span class="low">0&#176;</span>
                 </div>
                 <div class="humidity">
-                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                    <img src="resource/image/icon-humidity.png"> <span>0%</span>
                 </div>
             </div>
             <div data-role="footer" data-fullscreen="false" class="temp0">
                 <a href="#locations" class="locationListBtn" width="23" height="18" >
-                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                    <img src="resource/image/icon-footer-locationlist.png"/></a>
                 <span class="indicators">
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator.png"/>
-                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator.png"/>
+                    <img src="resource/image/icon-pageindicator-active.png"/>
                 </span>
             </div>
         </div>
