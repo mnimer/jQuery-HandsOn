@@ -46,6 +46,17 @@ body:after {
 	text-shadow: none;
 }
 
+.wireless {
+    font-family: "Avenir LT W01 35 Light", "Avenir-Light", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    /*font-weight: 200;*/
+    color: #149B0E;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
 
 /*********************************************
  * HEADERS
