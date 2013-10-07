@@ -1,637 +1,784 @@
 <!doctype html>
 <html>
-<head>
-<title>Button Icons</title>
-
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-
-
-<style type="text/css">
-
-/*********************
-***** STYLE LIST STEP
-**/
-body {
-
-}
-
-/* override */
-.ui-page {
-    height: 100%;
-}
-
-/* override */
-.ui-bar-a {
-    background: #333333;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
-    background-image: -webkit-linear-gradient(#333333, #333333);
-    background-image: -moz-linear-gradient(#333333, #333333);
-    background-image: -ms-linear-gradient(#333333, #333333);
-    background-image: -o-linear-gradient(#333333, #333333);
-    background-image: linear-gradient(#333333, #333333);
-}
-
-.ui-content {
-    max-height: 468px;
-}
-
-.temp0 {
-    background-color: #EEEEEE;
-}
-
-.temp30 {
-    background-color: #73b9FF;
-}
-
-.temp35 {
-    background-color: #88c3ff;
-}
-
-.temp40 {
-    background-color: #9dceff;
-}
-
-.temp45 {
-    background-color: #94a8de;
-}
-
-.temp50 {
-    background-color: #b2d9ff;
-}
-
-.temp55 {
-    background-color: #dcedff;
-}
-
-.temp60 {
-    background-color: #f3e4ea;
-}
-
-.temp65 {
-    background-color: #ffd5d5;
-}
-
-.temp70 {
-    background-color: #ffc0c0;
-}
-
-.temp75 {
-    background-color: #ffabab;
-}
-
-.temp80 {
-    background-color: #ff9696;
-}
-
-.temp85 {
-    background-color: #ff8181;
-}
-
-.temp90 {
-    background-color: #ff7373;
-}
-
-
-
-
-/*********************
-***** STYLE LIST STEP
-**/
-/********************
-** Location List Page Styles
-********************/
-.location-page {
-    background: #333333;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
-    background-image: -webkit-linear-gradient(#333333, #333333);
-    background-image: -moz-linear-gradient(#333333, #333333);
-    background-image: -ms-linear-gradient(#333333, #333333);
-    background-image: -o-linear-gradient(#333333, #333333);
-    background-image: linear-gradient(#333333, #333333);
-}
-
-.location-page .cityList {
-    width: 300px;
-    margin: 0px auto;
-    text-align: left;
-}
-
-.location-page .cityList > .city {
-    margin: 3px;
-    width: 140px;
-    height: 170px;
-    float: left;
-    border: 0px solid;
-    border-radius: 5px;
-    text-shadow: 0 0px 0;
-    font-size: 62.5%;
-    overflow: hidden;
-}
-
-.location-page .cityList .cityHeader {
-    width: 100%;
-    text-align: right;
-}
-
-.location-page .cityList .name {
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    margin-left: 8px;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .35);
-}
-
-.location-page .cityList .status {
-    color: rgba(0, 0, 0, .35);
-    font-size: 12px;
-    margin-left: 8px;
-}
-
-.location-page .cityList .temp {
-    color: #A67D7D; /*rgba(0,0,0,.35);*/
-    text-align: right;
-    font-size: 74px;
-    margin-top: 34px;
-    font-weight: 100;
-}
-
-
-/*********************
-***** STYLE CITY STEP
-**/
-/********************
-** City Page Styles
-********************/
-.city-page .city {
-    height: 100%;
-    color: rgba(0, 0, 0, .35);
-    text-align: center;
-    font-family: Helvetica Neue, Helvetica, Arial, san-serif;
-    line-height: 120%;
-    text-shadow: 0 0px 0; /* override jquery mobile default */
-
-}
-
-.city-page .city > div {
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.city-page .city > .name {
-    font-size: 26px;
-}
-
-.city-page .city > .icon {
-    margin-top: 40px;
-}
-
-.city-page .city > .status {
-    margin-top: 40px;
-}
-
-.city-page .city > .temp {
-    font-size: 46px;
-    font-family: HelveticaNeue-Light, Helvetica Neue, Helvetica, Arialsan-serif;
-}
-
-.city-page .city > .temp .high {
-    color: #ffffff;
-}
-
-
-.city-page .indicators {
-    position: relative;
-    top: 8px;
-    margin-left: 100px;
-    font-size:21px !important;
-}
-
-    /* override */
-.city-page .ui-footer .locationListBtn {
-    top: 4px;
-    left: 15px;
-    position: absolute;
-    background: none !important;
-    box-shadow: none !important;
-    border: 0px !important;
-}
-
-.city-page .ui-footer .locationListBtn .ui-btn-inner {
-    border: none !important;
-}
-
-.city-page .ui-footer .locationListBtn .ui-btn-inner img {
-    margin-top: 3px;
-}
-
-.city-page .ui-footer {
-    vertical-align: middle;
-
-    height: 42px;
-    border: 0px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))) !important;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
-    background-image: -ms-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
-}
-
-</style>
-
-
-<script type="application/javascript">
-    $(document).bind('ready', function ()
-    {
-        //NAVIGATION STEP
-        $(document).on("swiperight", function (event) { swipeRight(event); });
-        $(document).on("swipeleft", function (event) { swipeLeft(event); });
-
-        //AJAX STEP
-        loadWeatherData();
-    });
-
-
-
-    // Navigation STEP
-    /**
-     * Swipe between pages.
-     */
-    var swipeRight = function(event)
-    {
-        var prev = $(event.target).closest("div[data-role='page']").jqmData("prev");
-        if( prev != undefined )
-        {
-            $.mobile.changePage( "#" +prev, { transition: "slide", reverse: true  } );
-        }
-    };
-    var swipeLeft = function(event)
-    {
-        var next = $(event.target).closest("div[data-role='page']").jqmData("next");
-        if( next != undefined )
-        {
-            $.mobile.changePage( "#" +next, { transition: "slide" } );
-        }
-    };
-
-
-    //AJAX STEP
-    /**
-     * Find all of the data-cityid properties in the city list, then load the weather and adjust the CSS
-     */
-    function loadWeatherData()
-    {
-        // select cityId
-        var list = $(".cityList").find("div[data-cityid]");
-        for (var i = 0; i < list.length; i++)
-        {
-            var cityId = $(list[i]).attr("data-cityid");
-            loadWeather(cityId);
-        }
-    }
-
-    //AJAX STEP
-    /**
-     * Call the ajax service to get the weather data, then update the css and html values.
-     * @param cityId
-     */
-    function loadWeather(cityId)
-    {
-
-        $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?id=" + cityId,
-            type: "GET",
-            dataType: "JSONP"
-        })
-        .done(function (data, textStatus, jqXHR)
-        {
-            var temp = convertTemp(data.main.temp);
-            var highTemp = convertTemp(data.main.temp_max);
-            var lowTemp = convertTemp(data.main.temp_min);
-
-            $(".cityList > div[data-cityid="  +data.id  +"] > .temp").html( temp +"&#176;" );
-            $(".cityList > div[data-cityid="  +data.id  +"] > .status").html(data.weather[0].description);
-
-
-
-            $(".city-page[data-cityid="  +data.id  +"] .temp .high").html( highTemp +"&#176;" );
-            $(".city-page[data-cityid="  +data.id  +"] .temp .low").html( lowTemp +"&#176;" );
-            $(".city-page[data-cityid="  +data.id  +"] .humidity span").html( data.main.humidity +"%" );
-            $(".city-page[data-cityid="  +data.id  +"] .status").html( data.weather[0].description );
-            $(".city-page[data-cityid="  +data.id  +"] .icon img").attr( "src", "/resource/image/" +data.weather[0].icon +".png" );
-
-            updateCss(cityId, temp);
-        });
-    }
-
-    //AJAX STEP
-    function convertTemp(kelvin)
-    {
-        var f = kelvin * 1.8 - 459.67;
-        return Math.round(f);
-    }
-
-    //AJAX STEP
-    function updateCss(cityId, temp)
-    {
-        var tempClass = temp;
-        if( temp >= 90 ){ tempClass = "temp90";}
-        else if( temp >= 85 ){ tempClass = "temp85";}
-        else if( temp >= 80 ){ tempClass = "temp80";}
-        else if( temp >= 75 ){ tempClass = "temp75";}
-        else if( temp >= 70 ){ tempClass = "temp70";}
-        else if( temp >= 65 ){ tempClass = "temp65";}
-        else if( temp >= 60 ){ tempClass = "temp60";}
-        else if( temp >= 55 ){ tempClass = "temp55";}
-        else if( temp >= 50 ){ tempClass = "temp50";}
-        else if( temp >= 45 ){ tempClass = "temp45";}
-        else if( temp >= 40 ){ tempClass = "temp40";}
-        else if( temp >= 35 ){ tempClass = "temp35";}
-        else { tempClass = "temp35";}
-
-        // remove default temp class
-        var cityListDiv = $(".cityList > div[data-cityid=" +cityId +"]");
-        $(cityListDiv).addClass(tempClass);
-        $(cityListDiv).removeClass("temp0");
-
-        var cityDiv = $(".city-page[data-cityid=" +cityId +"]  > div");
-        cityDiv.addClass(tempClass);
-        cityDiv.removeClass("temp0");
-    }
-
-</script>
-</head>
-<body>
-
-
-<div id="locations" data-role="page"
-     data-prev="city-boston" data-next="city-newyork" class="location-page">
-    <div data-role="header" data-position="fixed" data-fullscreen="false">
-        <h1>Locations</h1>
-    </div>
-
-
-    <!--
-    **** STYLE LIST STEP
-    -->
-    <div data-role="content">
-        <!-- todo conver to floating divs -->
-        <div class="cityList" DIS>
-            <!-- New York -->
-            <div class="city temp0"
-                 data-cityid="5128581"
-                 onclick="$.mobile.navigate('#city-newyork')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
+    <head>
+        <title>Button Icons</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+
+        <style type="text/css">
+
+            /*********************
+            ***** STYLE LIST STEP
+            **/
+
+            html {
+                background-color: #333333;
+            }
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* override */
+            .ui-page {
+                height: 480px;
+                overflow: hidden;
+            }
+
+            /* override */
+            .ui-bar-a {
+                background: rgba( 51 , 51 , 51 , 0.8 ) !important;
+                border-bottom: none !important;
+                color: #FFFFFF;
+            }
+
+            .ui-header {
+                position: fixed;
+            }
+
+            .ui-header .ui-title {
+                font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+                font-size: 26px !important;
+                font-weight: 200;
+                text-shadow: 0px 1px #000000;
+                padding-top: 10px;
+            }
+
+            .ui-header-fixed {
+                height: 70px !important;
+            }
+
+            .ui-footer {
+                position: absolute;
+                top: 438px;
+                left: 0px;
+                right: 0px;
+                height: 42px;
+                background: rgba( 0 , 0 , 0 , 0.15 ) !important;
+            }
+
+            .ui-content {
+                background-color: #333333;
+                padding: 0px;
+                min-height: 480;
+            }
+
+            .ui-body-c {
+                max-height: 480px;
+                overflow: hidden;
+            }
+
+            .ui-page {
+                max-height: 480px;
+                overflow: hidden;
+            }
+
+            .temp0 {
+                background-color: #73B9FF;
+            }
+
+            .temp30 {
+                background-color: #73B9FF;
+            }
+
+            .temp35 {
+                background-color: #8AAEE8;
+            }
+
+            .temp40 {
+                background-color: #8AAEE8;
+            }
+
+            .temp45 {
+                background-color: #94A8DE;
+            }
+
+            .temp50 {
+                background-color: #A0A2D2;
+            }
+
+            .temp55 {
+                background-color: #AB9DC7;
+            }
+
+            .temp60 {
+                background-color: #B698BC;
+            }
+
+            .temp65 {
+                background-color: #C292B0;
+            }
+
+            .temp70 {
+                background-color: #CC8CA6;
+            }
+
+            .temp75 {
+                background-color: #D8869A;
+            }
+
+            .temp80 {
+                background-color: #E3818F;
+            }
+
+            .temp85 {
+                background-color: #EE7C84;
+            }
+
+            .temp90 {
+                background-color: #FF7373;
+            }
+
+
+
+
+            /*********************
+            ***** STYLE LIST STEP
+            **/
+            /********************
+            ** Location List Page Styles
+            ********************/
+
+            .locations {
+
+            }
+
+            .location-page {
+                background: #333333;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
+                background-image: -webkit-linear-gradient(#333333, #333333);
+                background-image: -moz-linear-gradient(#333333, #333333);
+                background-image: -ms-linear-gradient(#333333, #333333);
+                background-image: -o-linear-gradient(#333333, #333333);
+                background-image: linear-gradient(#333333, #333333);
+            }
+
+            .location-page .cityList {
+                width: 312px;
+                height: 100%;
+                margin: 0px auto;
+                text-align: left;
+                background-color: #FF0000;
+            }
+
+            .location-page .cityList > .city {
+                margin: 3px;
+                width: 150px;
+                height: 170px;
+                float: left;
+                border: 0px solid;
+                border-radius: 5px;
+                text-shadow: 0 0px 0;
+                font-size: 62.5%;
+                overflow: hidden;
+            }
+
+            .location-page .cityList > .last-city {
+                margin-bottom: 6px !important;
+            }
+
+            .location-page .cityList .cityHeader {
+                width: 100%;
+                text-align: right;
+            }
+
+            .location-page .cityList .name {
+                color: rgba(255, 255, 255, 1);
+                font-size: 16px;
+                margin-left: 8px;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, .55);
+            }
+
+            .location-page .cityList .status {
+                color: rgba(0, 0, 0, .45);
+                font-size: 12px;
+                margin-left: 8px;
+                margin-top: 2px;
+                font-weight: bold;
+                text-shadow: 0 1px 0 rgba( 255 , 255 , 255 , .25);
+            }
+
+            .location-page .cityList .temp {
+                position: relative;
+                color: #A67D7D;
+                text-align: right;
+                font-size: 74px;
+                margin-top: 32px;
+                padding-right: 24px;
+                font-weight: 100;
+            }
+
+            .location-page .cityList .temp .temp-degrees {
+                position: absolute;
+                right: 9px;
+                top: 12px;
+                font-size: 36px !important;
+                line-height: 36px;
+                font-weight: 200;
+            }
+
+
+            /*********************
+            ***** STYLE CITY STEP
+            **/
+            /********************
+            ** City Page Styles
+            ********************/
+
+            .city-page {
+                max-height: 480px !important;
+                overflow: hidden;
+            }
+
+            .city-page .city {
+                max-height: 480px;
+                min-height: 480px;
+                overflow: hidden;
+                text-align: center;
+                font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+                line-height: 120%;
+                text-shadow: 0 0px 0;
+            }
+
+            .city-page .city > .name {
+                font-size: 26px;
+                margin-top: 30px;
+                font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+                font-size: 26px;
+                font-weight: 300;
+                color: rgba(0, 0, 0, .45);
+                text-shadow: 0 1px 0 rgba( 255 , 255 , 255 , .25);
+            }
+
+            .city-page .city > .icon {
+                display: table-cell;
+                vertical-align: middle;
+                height: 250px;
+                width: 320px;
+            }
+
+            .city-page .city > .status {
+                font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, .45);
+                text-shadow: 0 1px 0 rgba( 255 , 255 , 255 , .25);
+            }
+
+            .city-page .city > .temp {
+                font-size: 46px;
+                font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+                font-weight: 200;
+                color: rgba(0, 0, 0, .55);
+                text-shadow: 0 1px 0 rgba( 255 , 255 , 255 , .25);
+                margin-top: 27px;
+            }
+
+            .city-page .city > .temp  .divider {
+                color: rgba(0, 0, 0, .35);
+                text-shadow: 0 1px 0 rgba( 255 , 255 , 255 , .25);
+            }
+
+            .city-page .city > .temp .high {
+                color: #FFFFFF;
+                text-shadow: 0 1px 0 rgba( 0 , 0 , 0 , .55);
+            }
+
+            .city-page .city > .humidity {
+                font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, .45);
+                text-shadow: 0 1px 0 rgba( 255 , 255 , 255 , .25);
+                margin-top: 27px;
+            }
+
+            .city-page .indicators {
+                position: relative;
+                top: 10px;
+                margin-left: 100px;
+                font-size:21px !important;
+            }
+
+                /* override */
+            .city-page .ui-footer .locationListBtn {
+                top: 4px;
+                left: 5px;
+                position: absolute;
+                background: none !important;
+                box-shadow: none !important;
+                border: 0px !important;
+            }
+
+            .city-page .ui-footer .locationListBtn .ui-btn-inner {
+                border: none !important;
+            }
+
+            .city-page .ui-footer .locationListBtn .ui-btn-inner img {
+                margin-top: 3px;
+            }
+
+            .city-page .ui-footer {
+                vertical-align: middle;
+
+                height: 42px;
+                border: 0px;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))) !important;
+                background-image: -webkit-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+                background-image: -moz-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+                background-image: -ms-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+                background-image: -o-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+                background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+            }
+
+        </style>
+
+        <script type="application/javascript">
+            $(document).bind('ready', function ()
+            {
+                //NAVIGATION STEP
+                $(document).on("swiperight", function (event) { swipeRight(event); });
+                $(document).on("swipeleft", function (event) { swipeLeft(event); });
+
+                //AJAX STEP
+                loadWeatherData();
+            });
+
+
+
+            // Navigation STEP
+            /**
+             * Swipe between pages.
+             */
+            var swipeRight = function(event)
+            {
+                var prev = $(event.target).closest("div[data-role='page']").jqmData("prev");
+                if( prev != undefined )
+                {
+                    $.mobile.changePage( "#" +prev, { transition: "slide", reverse: true  } );
+                }
+            };
+            var swipeLeft = function(event)
+            {
+                var next = $(event.target).closest("div[data-role='page']").jqmData("next");
+                if( next != undefined )
+                {
+                    $.mobile.changePage( "#" +next, { transition: "slide" } );
+                }
+            };
+
+
+            //AJAX STEP
+            /**
+             * Find all of the data-cityid properties in the city list, then load the weather and adjust the CSS
+             */
+            function loadWeatherData()
+            {
+                // select cityId
+                var list = $(".cityList").find("div[data-cityid]");
+                for (var i = 0; i < list.length; i++)
+                {
+                    var cityId = $(list[i]).attr("data-cityid");
+                    loadWeather(cityId);
+                }
+            }
+
+            //AJAX STEP
+            /**
+             * Call the ajax service to get the weather data, then update the css and html values.
+             * @param cityId
+             */
+            function loadWeather(cityId)
+            {
+
+                $.ajax({
+                    url: "http://api.openweathermap.org/data/2.5/weather?id=" + cityId,
+                    type: "GET",
+                    dataType: "JSONP"
+                })
+                .done(function (data, textStatus, jqXHR)
+                {
+                    var temp = convertTemp(data.main.temp);
+                    var highTemp = convertTemp(data.main.temp_max);
+                    var lowTemp = convertTemp(data.main.temp_min);
+
+                    $(".cityList > div[data-cityid="  +data.id  +"] > .temp").html( temp +"<span class='temp-degrees'>&#176;</span>" );
+                    $(".cityList > div[data-cityid="  +data.id  +"] > .status").html(data.weather[0].description);
+
+
+
+                    $(".city-page[data-cityid="  +data.id  +"] .temp .high").html( highTemp +"&#176;" );
+                    $(".city-page[data-cityid="  +data.id  +"] .temp .low").html( lowTemp +"&#176;" );
+                    $(".city-page[data-cityid="  +data.id  +"] .humidity span").html( data.main.humidity +"%" );
+                    $(".city-page[data-cityid="  +data.id  +"] .status").html( data.weather[0].description );
+                    $(".city-page[data-cityid="  +data.id  +"] .icon img").attr( "src", "/resource/image/" +data.weather[0].icon +".png" );
+
+                    updateCss(cityId, temp);
+                });
+            }
+
+            //AJAX STEP
+            function convertTemp(kelvin)
+            {
+                var f = kelvin * 1.8 - 459.67;
+                return Math.round(f);
+            }
+
+            //AJAX STEP
+            function updateCss(cityId, temp)
+            {
+                var tempClass = temp;
+                if( temp >= 90 ){ tempClass = "temp90";}
+                else if( temp >= 85 ){ tempClass = "temp85";}
+                else if( temp >= 80 ){ tempClass = "temp80";}
+                else if( temp >= 75 ){ tempClass = "temp75";}
+                else if( temp >= 70 ){ tempClass = "temp70";}
+                else if( temp >= 65 ){ tempClass = "temp65";}
+                else if( temp >= 60 ){ tempClass = "temp60";}
+                else if( temp >= 55 ){ tempClass = "temp55";}
+                else if( temp >= 50 ){ tempClass = "temp50";}
+                else if( temp >= 45 ){ tempClass = "temp45";}
+                else if( temp >= 40 ){ tempClass = "temp40";}
+                else if( temp >= 35 ){ tempClass = "temp35";}
+                else { tempClass = "temp35";}
+
+                // remove default temp class
+                var cityListDiv = $(".cityList > div[data-cityid=" +cityId +"]");
+                $(cityListDiv).addClass(tempClass);
+                $(cityListDiv).removeClass("temp0");
+
+                var cityDiv = $(".city-page[data-cityid=" +cityId +"]  > div");
+                cityDiv.addClass(tempClass);
+                cityDiv.removeClass("temp0");
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <div id="locations" data-role="page"
+             data-prev="city-boston" data-next="city-newyork" class="location-page">
+            <div data-role="header" data-position="fixed" data-fullscreen="false">
+                <h1>Locations</h1>
+            </div>
+
+
+            <!--
+            **** STYLE LIST STEP
+            -->
+            <div data-role="content">
+                <!-- todo conver to floating divs -->
+                <div class="cityList" DIS>
+                    <!-- New York -->
+                    <div class="city temp0"
+                         data-cityid="5128581"
+                         onclick="$.mobile.navigate('#city-newyork')">
+                        <div class="cityHeader">
+                            <img src="/resource/image/icon-corner-plus.png">
+                        </div>
+                        <div class="name">New York</div>
+                        <div class="status"></div>
+                        <div class="temp">0<span class="temp-degrees">&#176;</span> </div>
+                    </div>
+
+                    <!-- Grand Rapids-->
+                    <div class="city temp0"
+                         data-cityid="4994358"
+                         onclick="$.mobile.navigate('#city-grandrapids')">
+                        <div class="cityHeader">
+                            <img src="/resource/image/icon-corner-plus.png">
+                        </div>
+                        <div class="name">Grand Rapids</div>
+                        <div class="status"></div>
+                        <div class="temp">0<span class="temp-degrees">&#176;</span> </div>
+                    </div>
+
+                    <!--San Francisco-->
+                    <div class="city temp0"
+                         data-cityid="5391959"
+                         onclick="$.mobile.navigate('#city-sanfrancisco')">
+                        <div class="cityHeader">
+                            <img src="/resource/image/icon-corner-plus.png">
+                        </div>
+                        <div class="name">San Francisco</div>
+                        <div class="status"></div>
+                        <div class="temp">0<span class="temp-degrees">&#176;</span> </div>
+                    </div>
+
+                    <!--Chicago-->
+                    <div class="city temp0"
+                         data-cityid="4887398"
+                         onclick="$.mobile.navigate('#city-chicago')">
+                        <div class="cityHeader">
+                            <img src="/resource/image/icon-corner-plus.png">
+                        </div>
+                        <div class="name">Chicago</div>
+                        <div class="status"></div>
+                        <div class="temp">0<span class="temp-degrees">&#176;</span> </div>
+                    </div>
+
+                    <!--Miami-->
+                    <div class="city temp0"
+                         data-cityid="4164138"
+                         onclick="$.mobile.navigate('#city-miami')">
+                        <div class="cityHeader">
+                            <img src="/resource/image/icon-corner-plus.png">
+                        </div>
+                        <div class="name">Miami</div>
+                        <div class="status"></div>
+                        <div class="temp">0<span class="temp-degrees">&#176;</span> </div>
+                    </div>
+
+                    <!--Boston-->
+                    <div class="city temp0 last-city"
+                         data-cityid="4930956"
+                         onclick="$.mobile.navigate('#city-boston')">
+                        <div class="cityHeader">
+                            <img src="/resource/image/icon-corner-plus.png">
+                        </div>
+                        <div class="name">Boston</div>
+                        <div class="status"></div>
+                        <div class="temp">0<span class="temp-degrees">&#176;</span> </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+
+        <!--
+            **** STYLE CITY STEP
+            -->
+        <div id="city-newyork" data-role="page"
+             data-cityid="5128581"
+             data-prev="locations" data-next="city-grandrapids"
+             class="city-page ">
+            <div data-role="content" class="city temp0">
                 <div class="name">New York</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!-- Grand Rapids-->
-            <div class="city temp0"
-                 data-cityid="4994358"
-                 onclick="$.mobile.navigate('#city-grandrapids')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
+                <div class="icon">
+                    <img src="/resource/image/Cloud.png"/>
                 </div>
+                <div class="status"></div>
+                <div class="temp">
+                    <span class="high">0&#176;</span>
+                    <span class="divider">/</span>
+                    <span class="low">0&#176;</span>
+                </div>
+                <div class="humidity">
+                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                </div>
+            </div>
+            <div data-role="footer" data-fullscreen="false" class="temp0">
+                <a href="#locations" class="locationListBtn" width="23" height="18" >
+                    <img src="/resource/image/icon-footer-locationlist.png"/>
+                </a>
+                <span class="indicators">
+                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                </span>
+            </div>
+        </div>
+
+
+
+        <div id="city-grandrapids" data-role="page"
+             data-cityid="4994358"
+             data-prev="city-newyork" data-next="city-sanfrancisco"
+             class="city-page ">
+            <div data-role="content" class="city temp0">
                 <div class="name">Grand Rapids</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--San Francisco-->
-            <div class="city temp0"
-                 data-cityid="5391959"
-                 onclick="$.mobile.navigate('#city-sanfrancisco')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
+                <div class="icon">
+                    <img src="/resource/image/Cloud.png"/>
                 </div>
+                <div class="status"></div>
+                <div class="temp">
+                    <span class="high">0&#176;</span>
+                    <span class="divider">/</span>
+                    <span class="low">0&#176;</span>
+                </div>
+                <div class="humidity">
+                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                </div>
+            </div>
+            <div data-role="footer" data-fullscreen="false" class="temp0">
+                <a href="#locations" class="locationListBtn" width="23" height="18" >
+                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                <span class="indicators">
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                </span>
+            </div>
+        </div>
+
+
+
+
+        <div id="city-sanfrancisco" data-role="page"
+             data-cityid="5391959"
+             data-prev="city-grandrapids" data-next="city-chicago"
+             class="city-page ">
+            <div data-role="content" class="city temp0">
                 <div class="name">San Francisco</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--Chicago-->
-            <div class="city temp0"
-                 data-cityid="4887398"
-                 onclick="$.mobile.navigate('#city-chicago')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
+                <div class="icon">
+                    <img src="/resource/image/Cloud.png"/>
                 </div>
+                <div class="status"></div>
+                <div class="temp">
+                    <span class="high">0&#176;</span>
+                    <span class="divider">/</span>
+                    <span class="low">0&#176;</span>
+                </div>
+                <div class="humidity">
+                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                </div>
+            </div>
+            <div data-role="footer" data-fullscreen="false" class="temp0">
+                <a href="#locations" class="locationListBtn" width="23" height="18" >
+                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                <span class="indicators">
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                </span>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="city-chicago" data-role="page"
+             data-cityid="4887398"
+             data-prev="city-sanfrancisco" data-next="city-miami"
+             class="city-page ">
+            <div data-role="content" class="city temp0">
                 <div class="name">Chicago</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--Miami-->
-            <div class="city temp0"
-                 data-cityid="4164138"
-                 onclick="$.mobile.navigate('#city-miami')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
+                <div class="icon">
+                    <img src="/resource/image/Cloud.png"/>
                 </div>
+                <div class="status"></div>
+                <div class="temp">
+                    <span class="high">0&#176;</span>
+                    <span class="divider">/</span>
+                    <span class="low">0&#176;</span>
+                </div>
+                <div class="humidity">
+                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                </div>
+            </div>
+            <div data-role="footer" data-fullscreen="false" class="temp0">
+                <a href="#locations" class="locationListBtn" width="23" height="18" >
+                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                <span class="indicators">
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                </span>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="city-miami" data-role="page"
+             data-cityid="4164138"
+             data-prev="city-chicago" data-next="city-boston"
+             class="city-page ">
+            <div data-role="content" class="city temp0">
                 <div class="name">Miami</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
-            </div>
-
-            <!--Boston-->
-            <div class="city temp0"
-                 data-cityid="4930956"
-                 onclick="$.mobile.navigate('#city-boston')">
-                <div class="cityHeader">
-                    <img src="/resource/image/icon-corner-plus.png">
+                <div class="icon">
+                    <img src="/resource/image/Cloud.png"/>
                 </div>
-                <div class="name">Boston</div>
                 <div class="status"></div>
-                <div class="temp">0&#176;</div>
+                <div class="temp">
+                    <span class="high">0&#176;</span>
+                    <span class="divider">/</span>
+                    <span class="low">0&#176;</span>
+                </div>
+                <div class="humidity">
+                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                </div>
+            </div>
+            <div data-role="footer" data-fullscreen="false" class="temp0">
+                <a href="#locations" class="locationListBtn" width="23" height="18" >
+                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                <span class="indicators">
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                </span>
             </div>
         </div>
-    </div>
-</div>
 
 
-<!--
-    **** STYLE CITY STEP
-    -->
-<div id="city-newyork" data-role="page"
-     data-cityid="5128581"
-     data-prev="locations" data-next="city-grandrapids"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">New York</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
+
+
+
+        <div id="city-boston" data-role="page"
+             data-cityid="4930956"
+             data-prev="city-miami" data-next="locations"
+             class="city-page ">
+            <div data-role="content" class="city temp0">
+                <div class="name">Boston</div>
+                <div class="icon">
+                    <img src="/resource/image/Cloud.png"/>
+                </div>
+                <div class="status"></div>
+                <div class="temp">
+                    <span class="high">0&#176;</span>
+                    <span class="divider">/</span>
+                    <span class="low">0&#176;</span>
+                </div>
+                <div class="humidity">
+                    <img src="/resource/image/icon-humidity.png"> <span>0%</span>
+                </div>
+            </div>
+            <div data-role="footer" data-fullscreen="false" class="temp0">
+                <a href="#locations" class="locationListBtn" width="23" height="18" >
+                    <img src="/resource/image/icon-footer-locationlist.png"/></a>
+                <span class="indicators">
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator.png"/>
+                    <img src="/resource/image/icon-pageindicator-active.png"/>
+                </span>
+            </div>
         </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/>
-        </a>
-        <span class="indicators">&#9679; &#9675; &#9675; &#9675; &#9675; &#9675; </span>
-    </div>
-</div>
-
-
-
-<div id="city-grandrapids" data-role="page"
-     data-cityid="4994358"
-     data-prev="city-newyork" data-next="city-sanfrancisco"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Grand Rapids</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9679; &#9675; &#9675; &#9675; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-<div id="city-sanfrancisco" data-role="page"
-     data-cityid="5391959"
-     data-prev="city-grandrapids" data-next="city-chicago"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">San Francisco</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9675; &#9679; &#9675; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-chicago" data-role="page"
-     data-cityid="4887398"
-     data-prev="city-sanfrancisco" data-next="city-miami"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Chicago</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators"> &#9675; &#9675; &#9675; &#9679; &#9675; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-miami" data-role="page"
-     data-cityid="4164138"
-     data-prev="city-chicago" data-next="city-boston"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Miami</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators"> &#9675; &#9675; &#9675; &#9675; &#9679; &#9675;</span>
-    </div>
-</div>
-
-
-
-
-
-<div id="city-boston" data-role="page"
-     data-cityid="4930956"
-     data-prev="city-miami" data-next="locations"
-     class="city-page ">
-    <div data-role="content" class="city temp0">
-        <div class="name">Boston</div>
-        <div class="icon">
-            <img src="/resource/image/Cloud.png"/>
-        </div>
-        <div class="status"></div>
-        <div class="temp">
-            <span class="high">0&#176;</span>
-            <span class="divider">/</span>
-            <span class="low">0&#176;</span>
-        </div>
-        <div class="humidity">
-            <img src="/resource/image/icon-humidity.png"> <span>0%</span>
-        </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-fullscreen="false" class="temp0">
-        <a href="#locations" class="locationListBtn" width="23" height="18" >
-            <img src="/resource/image/icon-footer-locationlist.png"/></a>
-        <span class="indicators">&#9675; &#9675; &#9675; &#9675; &#9675; &#9675; &#9679;</span>
-    </div>
-</div>
-</body>
+    </body>
 </html>
