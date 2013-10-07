@@ -6,39 +6,152 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 
 
-    <style type="text/css">
-        body{
+<style type="text/css">
+body {
 
-        }
+}
 
-        /* override */
-        .ui-page{
-            height:100%;
-        }
+    /* override */
+.ui-page {
+    height: 100%;
+}
 
-        /* override */
-        .ui-bar-a
+    /* override */
+.ui-bar-a {
         {
-            background: #333333;
-            background-image: -webkit-gradient(linear,left top,left bottom,from(#333333),to(#333333));
-            background-image: -webkit-linear-gradient(#333333,#333333);
-            background-image: -moz-linear-gradient(#333333,#333333);
-            background-image: -ms-linear-gradient(#333333,#333333);
-            background-image: -o-linear-gradient(#333333,#333333);
-            background-image: linear-gradient(#333333,#333333);
-        }
+    background: #333333;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
+    background-image: -webkit-linear-gradient(#333333, #333333);
+    background-image: -moz-linear-gradient(#333333, #333333);
+    background-image: -ms-linear-gradient(#333333, #333333);
+    background-image: -o-linear-gradient(#333333, #333333);
+    background-image: linear-gradient(#333333, #333333);
+}
 
+.ui-content {
+    max-height: 468px;
+}
 
-        /** TODO Add classes for the temp colors */
+.temp0 {
+    background-color: #EEEEEE;
+}
 
+.temp30 {
+    background-color: #73b9FF;
+}
 
+.temp35 {
+    background-color: #88c3ff;
+}
 
-        /** TODO Add location CSS */
+.temp40 {
+    background-color: #9dceff;
+}
+
+.temp45 {
+    background-color: #94a8de;
+}
+
+.temp50 {
+    background-color: #b2d9ff;
+}
+
+.temp55 {
+    background-color: #dcedff;
+}
+
+.temp60 {
+    background-color: #f3e4ea;
+}
+
+.temp65 {
+    background-color: #ffd5d5;
+}
+
+.temp70 {
+    background-color: #ffc0c0;
+}
+
+.temp75 {
+    background-color: #ffabab;
+}
+
+.temp80 {
+    background-color: #ff9696;
+}
+
+.temp85 {
+    background-color: #ff8181;
+}
+
+.temp90 {
+    background-color: #ff7373;
+}
+
+    /*********************
+    ***** STYLE LIST STEP
+    **/
+    /********************
+    ** Location List Page Styles
+    ********************/
+.location-page {
+    background: #333333;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
+    background-image: -webkit-linear-gradient(#333333, #333333);
+    background-image: -moz-linear-gradient(#333333, #333333);
+    background-image: -ms-linear-gradient(#333333, #333333);
+    background-image: -o-linear-gradient(#333333, #333333);
+    background-image: linear-gradient(#333333, #333333);
+}
+
+.location-page .cityList {
+    width: 300px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.location-page .cityList > .city {
+    margin: 3px;
+    width: 140px;
+    height: 170px;
+    float: left;
+    border: 0px solid;
+    border-radius: 5px;
+    text-shadow: 0 0px 0;
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+.location-page .cityList .cityHeader {
+    width: 100%;
+    text-align: right;
+}
+
+.location-page .cityList .name {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    margin-left: 8px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .35);
+}
+
+.location-page .cityList .status {
+    color: rgba(0, 0, 0, .35);
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.location-page .cityList .temp {
+    color: #A67D7D; /*rgba(0,0,0,.35);*/
+    text-align: right;
+    font-size: 74px;
+    margin-top: 34px;
+    font-weight: 100;
+}
 
     </style>
 
@@ -46,8 +159,14 @@
     <script type="application/javascript">
         $(document).bind('ready', function ()
         {
-            $(document).on("swiperight", function (event) { swipeRight(event); });
-            $(document).on("swipeleft", function (event) { swipeLeft(event); });
+            $(document).on("swiperight", function (event)
+            {
+                swipeRight(event);
+            });
+            $(document).on("swipeleft", function (event)
+            {
+                swipeLeft(event);
+            });
 
         });
 
@@ -89,24 +208,24 @@
             <!-- New York -->
             <div class="city temp0" onclick="$.mobile.navigate('#city-newyork')">
                 <div class="cityHeader">
-                    <img src="resource/image/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">New York</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
+                <div class="status">Partly Cloudy</div>
+                <div class="temp">70&#176;</div>
             </div>
 
             <!-- Grand Rapids-->
             <div class="city temp0" onclick="$.mobile.navigate('#city-grandrapids')">
                 <div class="cityHeader">
-                    <img src="resource/image/icon-corner-plus.png">
+                    <img src="/resource/image/icon-corner-plus.png">
                 </div>
                 <div class="name">Grand Rapids</div>
-                <div class="status"></div>
-                <div class="temp">0&#176;</div>
+                <div class="status">Partly Cloudy</div>
+                <div class="temp">65&#176;</div>
             </div>
 
-            <!-- TODO: add San Francisco -->
+            <!--San Francisco-->
             <!-- TODO: add Chicago-->
             <!-- TODO: add Miami-->
             <!-- TODO: add Boston-->

@@ -13,6 +13,7 @@
 
 
 
+
 <style type="text/css">
 
 /*********************
@@ -36,6 +37,10 @@ body {
     background-image: -ms-linear-gradient(#333333, #333333);
     background-image: -o-linear-gradient(#333333, #333333);
     background-image: linear-gradient(#333333, #333333);
+}
+
+.ui-content {
+    max-height: 468px;
 }
 
 .temp0 {
@@ -97,12 +102,12 @@ body {
 
 
 
-/*********************
-***** STYLE LIST STEP
-**/
-/********************
-** Location List Page Styles
-********************/
+    /*********************
+    ***** STYLE LIST STEP
+    **/
+    /********************
+    ** Location List Page Styles
+    ********************/
 .location-page {
     background: #333333;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
@@ -213,18 +218,17 @@ body {
     top: 4px;
     left: 15px;
     position: absolute;
-    background-color: rgba(0, 0, 0, .35) !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
 
-    border: 0px;
-    -webkit-border-radius: 0 !important;
-    border-radius: 0 !important;
+.city-page .ui-footer .locationListBtn .ui-btn-inner {
+    border: none !important;
+}
 
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .35)), to(rgba(0, 0, 0, .35))) !important;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -ms-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
+.city-page .ui-footer .locationListBtn .ui-btn-inner img {
+    margin-top: 3px;
 }
 
 .city-page .ui-footer {
@@ -232,16 +236,16 @@ body {
 
     height: 42px;
     border: 0px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .35)), to(rgba(0, 0, 0, .35))) !important;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -ms-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))) !important;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)) !important;
 }
 
-</style>
 
+</style>
 
 <script type="application/javascript">
 
